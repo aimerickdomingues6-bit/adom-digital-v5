@@ -386,6 +386,13 @@ body.cursor-hidden #cursor,body.cursor-hidden #cursor-dot{opacity:0}
 .confirm-calendly{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.75);font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;padding:11px 20px;border-radius:var(--r);border:1px solid rgba(255,255,255,.12);transition:.2s}
 .confirm-calendly:hover{background:rgba(255,255,255,.14);color:#fff}
 @media(max-width:600px){.confirm-assets{grid-template-columns:1fr}}
+
+/* GSAP fallback — visible if JS/CDN fails */
+.hero-pill,.hero-h1,.hero-sub,.hero-btns,.hero-badges .hb,
+.st,.pain-g .pc,.sv-g .sc,.sea-box,.comp-table,.garantie-box,
+.step,.temo-card,.diff-g .dc,.faq-w .fi,.cfg-wrap,
+.case-img-w,.ct-t,.ct-d,.ct-feats .cf-row,.form-box,
+.s-head>*,.case-w>div:first-child>*{opacity:1}
 </style>
 </head>
 <body>
@@ -1464,11 +1471,10 @@ document.addEventListener('keydown', function(e) {
     })
     .then(function(res) {
       if (!res.ok) {
-        return res.json().then(function(d) {
-          throw new Error(d.error || ('Erreur serveur ' + res.status));
-        }).catch(function() {
-          throw new Error('Erreur serveur ' + res.status);
-        });
+        return res.json().then(
+          function(d) { throw new Error(d.error || ('Erreur serveur ' + res.status)); },
+          function()  { throw new Error('Erreur serveur ' + res.status); }
+        );
       }
       return res.json();
     })
