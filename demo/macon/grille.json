@@ -1,0 +1,22 @@
+{
+  "_note": "Grille FICTIVE de démonstration (Maçonnerie Exemple). Prix HT indicatifs, à remplacer par la grille réelle de chaque artisan.",
+  "artisan": "Maçonnerie Exemple",
+  "tva": "TVA en sus : 10 % pour la plupart des travaux sur un logement de plus de 2 ans, 20 % sinon.",
+  "arrondi": 50,
+  "travaux": [
+    { "id": "dalle", "libelle": "Dalle béton armé (12 cm)", "unite": "m²", "uniteLongue": "mètres carrés", "bas": 65, "haut": 110, "minimum": 900, "max": 300, "inclus": "Terrassement léger, hérisson, treillis soudé, coulage et finition talochée." },
+    { "id": "mur", "libelle": "Mur en parpaing (élévation)", "unite": "m²", "uniteLongue": "mètres carrés", "bas": 85, "haut": 140, "minimum": 1000, "max": 300, "inclus": "Fourniture des parpaings, chaînages, montage. Hors fondations." },
+    { "id": "muret", "libelle": "Muret de clôture (environ 1 m de haut)", "unite": "ml", "uniteLongue": "mètres linéaires", "bas": 140, "haut": 240, "minimum": 1000, "max": 200, "inclus": "Semelle de fondation, montage, chaperon. Hors enduit." },
+    { "id": "ouverture", "libelle": "Ouverture dans un mur porteur", "unite": "ouverture", "uniteLongue": "ouvertures", "bas": 2500, "haut": 5500, "minimum": 2500, "max": 5, "inclus": "Étaiement, linteau ou poutre acier, découpe, reprise des tableaux. Hors étude de structure." },
+    { "id": "enduit", "libelle": "Enduit de façade monocouche", "unite": "m²", "uniteLongue": "mètres carrés", "bas": 38, "haut": 70, "minimum": 1500, "max": 600, "inclus": "Échafaudage, protection, préparation du support, enduit gratté ou taloché." },
+    { "id": "terrasse", "libelle": "Terrasse carrelée sur dalle", "unite": "m²", "uniteLongue": "mètres carrés", "bas": 120, "haut": 210, "minimum": 2000, "max": 200, "inclus": "Dalle béton, chape, pose du carrelage extérieur. Carrelage fourni jusqu'à 35 € HT/m²." }
+  ],
+  "zones": [
+    { "id": "z1", "libelle": "Troyes et agglomération", "communes": ["Troyes", "Sainte-Savine", "Saint-André-les-Vergers", "La Chapelle-Saint-Luc", "Pont-Sainte-Marie", "Saint-Julien-les-Villas", "Rosières-près-Troyes"], "deplacement": 0 },
+    { "id": "z2", "libelle": "Moins de 40 km de Troyes", "communes": ["Bar-sur-Seine", "Arcis-sur-Aube", "Lusigny-sur-Barse", "Estissac", "Aix-Villemaur-Pâlis"], "deplacement": 80 },
+    { "id": "z3", "libelle": "Reste de l'Aube", "communes": ["Romilly-sur-Seine", "Nogent-sur-Seine", "Bar-sur-Aube", "Brienne-le-Château", "Autre commune de l'Aube"], "deplacement": 150 }
+  ],
+  "majorations": [
+    { "id": "acces", "libelle": "Accès difficile (pas d'accès camion, jardin en pente, étage)", "bas": 0.10, "haut": 0.20 }
+  ]
+}

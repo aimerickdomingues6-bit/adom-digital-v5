@@ -1,6 +1,10 @@
 {
   "name": "adom-digital",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/formulaires.test.js && node tests/estimateur.test.js"
+  },
   "dependencies": {
     "@emailjs/nodejs": "^4.0.3"
   }
