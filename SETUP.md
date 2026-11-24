@@ -1,116 +1,97 @@
-# ADOM Digital V5 — Setup & Configuration
+# ADOM Digital — mise en route
 
-## 1. Structure des fichiers
+## 1. Structure
 
 ```
-adom-digital-v5/
-├── index.html                        ← Site complet (CSS + JS inline)
-├── netlify/
-│   └── functions/
-│       └── send-email.js             ← Fonction Netlify pour l'envoi d'email
-└── SETUP.md                          ← Ce fichier
+index.html                  Accueil (devis interactif, démo, FAQ, contact)
+audit/                      Page d'arrivée de l'audit gratuit (QR code du courrier, partenaires)
+demo/macon/                 Site démo d'un maçon fictif (non indexé)
+  grille.json               Grille de prix de l'estimateur
+  faq-assistant.json        Réponses préparées de l'assistant
+  demo-macon.css            Charte propre à l'artisan fictif
+mentions-legales/ confidentialite/ cookies/ cgv/   Pages légales
+404.html, robots.txt, sitemap.xml, og-image.png, favicon.svg
+assets/site.css             Charte et composants
+assets/site.js              Cookies, formulaires, devis interactif
+assets/demo.js              Estimateur et assistant (réutilisables sur les sites clients)
+fonts/                      Archivo et Atkinson Hyperlegible Next (licence OFL incluse)
+netlify/functions/send-email.js   Envoi des formulaires
+netlify/functions/lib/schema.js   Liste unique des champs de formulaire
+tests/                      npm test
 ```
 
 ## 2. Déploiement Netlify
 
-### Option A — Drag & Drop (le plus simple)
-1. Aller sur https://app.netlify.com
-2. Glisser le dossier `adom-digital-v5/` dans la zone de dépôt
-3. Netlify crée automatiquement le site + détecte les Functions
+1. Netlify → Add new site → Import from GitHub → `adom-digital-v5`.
+2. Aucun réglage de build : `netlify.toml` indique le dossier publié (`.`) et les fonctions.
+3. Domaine : ajouter le domaine définitif, puis remplacer `https://adom.digital` partout
+   (balises canonical et og, `sitemap.xml`, `robots.txt`) si le domaine est différent.
 
-### Option B — CLI Netlify
-```bash
-npm install -g netlify-cli
-netlify deploy --dir . --functions netlify/functions --prod
-```
+## 3. Variables d'environnement (Netlify → Site configuration → Environment variables)
 
-## 3. Variables d'environnement Netlify
+| Variable | Rôle |
+| --- | --- |
+| `EMAILJS_SERVICE_ID` | Service EmailJS |
+| `EMAILJS_TEMPLATE_ID` | Modèle d'email (voir ci-dessous) |
+| `EMAILJS_PUBLIC_KEY` | Clé publique EmailJS |
+| `EMAILJS_PRIVATE_KEY` | Clé privée EmailJS |
+| `ORIGINES_AUTORISEES` | Facultatif : autres domaines autorisés à envoyer les formulaires, séparés par des virgules |
 
-Dans Netlify → Site settings → Environment variables, ajouter :
+Sans les variables EmailJS, les formulaires affichent « L'envoi n'est pas encore configuré ».
 
-| Nom de la variable       | Description                                      |
-|--------------------------|--------------------------------------------------|
-| `EMAILJS_SERVICE_ID`     | ID du service EmailJS (ex: `service_xxxxxxx`)   |
-| `EMAILJS_TEMPLATE_ID`    | ID du template EmailJS (ex: `template_xxxxxxx`) |
-| `EMAILJS_PUBLIC_KEY`     | Clé publique EmailJS (Account → API Keys)       |
-| `EMAILJS_PRIVATE_KEY`    | Clé privée EmailJS (Account → API Keys)         |
+Modèle EmailJS : objet `{{sujet}}`, corps `{{details}}` puis `Reçu le {{envoye_le}}`,
+« Reply-To » = `{{reply_to}}`. Dans EmailJS → Account → Security, activer l'accès API
+pour les applications non navigateur (la fonction appelle EmailJS depuis le serveur).
 
-## 4. Configuration EmailJS
+## 4. Suivre les canaux d'acquisition
 
-1. Créer un compte sur https://emailjs.com
-2. **Service** : Connecter votre boîte Gmail/Outlook/SMTP personnalisé
-3. **Template** : Créer un template avec ces variables :
-   - `{{prenom}}` — Prénom du prospect
-   - `{{email}}` — Email du prospect
-   - `{{telephone}}` — Téléphone
-   - `{{ville}}` — Ville / CP
-   - `{{metier}}` — Corps de métier
-   - `{{site_existant}}` — A-t-il déjà un site ?
-   - `{{budget}}` — Budget approximatif
-   - `{{source}}` — Comment il vous a trouvé
-   - `{{message}}` — Description du projet
-   - `{{style_site}}` — Style configurateur
-   - `{{priorite_site}}` — Priorité configurateur
-   - `{{couleur_site}}` — Couleurs configurateur
-   - `{{sent_at}}` — Date et heure d'envoi
+Chaque canal a son lien vers la page audit, avec un code `src` :
 
-4. **Clés API** : Account → API Keys → noter Public Key + Private Key
-5. **Installation de la dépendance Netlify Function** :
-   - Créer un fichier `package.json` à la racine :
-   ```json
-   {
-     "name": "adom-digital",
-     "version": "1.0.0",
-     "dependencies": {
-       "@emailjs/nodejs": "^4.0.3"
-     }
-   }
-   ```
-   - Netlify installe automatiquement les dépendances lors du déploiement
+| Canal | Lien à utiliser |
+| --- | --- |
+| Courrier avec audit imprimé (QR code) | `/audit/?src=courrier` |
+| Vidéo avant/après de fiche Google | `/audit/?src=video` |
+| Expert-comptable (un code par cabinet) | `/audit/?src=comptable-nomducabinet` |
+| Chambre de métiers | `/audit/?src=cma` |
 
-## 5. Configuration Calendly
+Le code arrive dans l'email de chaque demande (ligne « Canal »). Il est conservé pendant toute
+la visite, même si le prospect passe par l'accueil avant de remplir le formulaire de contact.
 
-1. Créer un compte sur https://calendly.com
-2. Créer un type d'événement "Appel découverte 15 min"
-3. Dans `index.html`, remplacer toutes les occurrences de :
-   `https://calendly.com/adom-digital/15min`
-   par votre URL Calendly personnelle
+## 5. Mesure d'audience (facultatif)
 
-## 6. Personnalisation à compléter dans index.html
+Renseigner `GA_ID` en haut de `assets/site.js`. Le bandeau cookies apparaît alors
+automatiquement, et Google Analytics ne se charge qu'après acceptation. Sans `GA_ID`, aucun
+cookie facultatif n'est déposé et le bandeau ne s'affiche que via « Gérer les cookies ».
 
-Rechercher et remplacer les placeholders suivants :
-- `[A completer]` → Votre adresse postale
-- `[SIREN a completer]` → Votre numéro SIREN
-- `[Email a completer]` → Votre email professionnel
-- `[Telephone a completer]` → Votre numéro de téléphone
+## 6. Adapter la démo à un vrai client
 
-## 7. Headers HTTP recommandés (fichier _headers Netlify)
+1. Copier `demo/macon/` vers le site du client.
+2. Remplacer `grille.json` par sa grille (prix HT bas et haut par unité, forfait minimum,
+   quantité maximale, zones et frais de déplacement).
+3. Faire relire et valider chaque réponse de `faq-assistant.json` par l'artisan.
+4. Brancher plus tard une IA : remplacer uniquement `getAnswer()` dans `assets/demo.js` par un
+   appel à une fonction serveur, et afficher la mention « assistant IA » (AI Act, art. 50).
 
-Créer un fichier `_headers` à la racine pour renforcer la sécurité :
+## 7. Tests
 
 ```
-/*
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.unsplash.com data:; connect-src 'self'; frame-ancestors 'none';
+npm test
 ```
 
-## 8. Image OG (recommandé)
+Vérifie que les formulaires HTML et la fonction d'envoi utilisent les mêmes champs et les mêmes
+valeurs, que le spam est rejeté, et que l'estimateur et l'assistant répondent correctement.
 
-Créer une image `og-image.jpg` de 1200×630px et la placer à la racine.
-Format : Logo ADOM + tagline sur fond sombre (#0D1117).
+## 8. À compléter avant la mise en ligne
 
-## 9. Checklist avant mise en ligne
+Rechercher `À COMPLÉTER` dans le dépôt : chaque occurrence est surlignée en jaune sur le site.
 
-- [ ] Variables d'environnement Netlify configurées
-- [ ] Template EmailJS créé et testé
-- [ ] URL Calendly remplacée dans index.html
-- [ ] Mentions légales complétées (SIREN, adresse, email, téléphone)
-- [ ] Image og-image.jpg créée et uploadée
-- [ ] Domaine adom.digital configuré dans Netlify
-- [ ] HTTPS actif (automatique avec Netlify)
-- [ ] Test formulaire en production (1 envoi réel)
-- [ ] Test Google PageSpeed Insights (viser 90+)
-- [ ] Soumettre le sitemap à Google Search Console
+- Téléphone et email (pied de page, contact, mentions, CGV, confidentialité)
+- Adresse, SIREN, SIRET, immatriculation (mentions légales, CGV)
+- Assurance RC Pro (mentions légales)
+- Marque INPI (mentions légales)
+- Taux horaire hors devis (CGV art. 5), annexe sous-traitance RGPD (CGV art. 15)
+- Prix du Module Assistant (accueil)
+- Photo portrait et parcours (accueil, section « Qui je suis »)
+- Dates de mise à jour des pages légales
+- Domaine définitif, identifiant Google Analytics si utilisé
+- Vérifier l'adresse de Netlify et le cadre de transfert des données (mentions, confidentialité)

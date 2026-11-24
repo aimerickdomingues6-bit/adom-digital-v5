@@ -1,1336 +1,553 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-<meta name="robots" content="index,follow">
-<title>Site vitrine artisan BTP Troyes — ADOM Digital (10)</title>
-<meta name="description" content="Site vitrine professionnel pour artisans BTP à Troyes et dans l'Aube. Livraison garantie 14 jours. Offre modulaire. Devis gratuit sous 24h — ADOM Digital.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site internet artisan BTP à Troyes et dans l'Aube | ADOM</title>
+<meta name="description" content="Sites internet et fiches Google pour artisans du bâtiment de l'Aube. Prix affichés, livré en 14 jours garantis, et le site vous appartient. Audit gratuit.">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://adom.digital/">
-<meta property="og:title" content="Site vitrine artisan BTP Troyes — ADOM Digital">
-<meta property="og:description" content="Site professionnel livré en 14 jours pour artisans BTP à Troyes. Offre modulaire dès 490€. Devis gratuit sous 24h.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="ADOM Digital">
+<meta property="og:title" content="Site internet artisan BTP à Troyes et dans l'Aube | ADOM">
+<meta property="og:description" content="Sites internet et fiches Google pour artisans du bâtiment de l'Aube. Prix affichés, livré en 14 jours garantis, et le site vous appartient. Audit gratuit.">
 <meta property="og:url" content="https://adom.digital/">
-<meta property="og:image" content="https://adom.digital/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self'; object-src 'none'; base-uri 'self';">
-
+<meta property="og:image" content="https://adom.digital/og-image.png">
+<meta name="theme-color" content="#1C262B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/atkinson-hyperlegible-next.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
-{
+[
+ {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "ProfessionalService",
+  "@id": "https://adom.digital/#entreprise",
+  "name": "ADOM Digital",
+  "description": "Création de sites internet et de fiches Google pour les artisans du bâtiment de Troyes et de l'Aube.",
+  "url": "https://adom.digital/",
+  "image": "https://adom.digital/og-image.png",
+  "founder": {
+   "@type": "Person",
+   "name": "Aimerick Domingues"
+  },
+  "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Troyes",
+   "postalCode": "10000",
+   "addressRegion": "Grand Est",
+   "addressCountry": "FR"
+  },
+  "areaServed": [
+   {
+    "@type": "AdministrativeArea",
+    "name": "Aube"
+   },
+   {
+    "@type": "City",
+    "name": "Troyes"
+   },
+   {
+    "@type": "City",
+    "name": "Romilly-sur-Seine"
+   },
+   {
+    "@type": "City",
+    "name": "Bar-sur-Aube"
+   },
+   {
+    "@type": "City",
+    "name": "Nogent-sur-Seine"
+   },
+   {
+    "@type": "City",
+    "name": "Sainte-Savine"
+   },
+   {
+    "@type": "City",
+    "name": "Saint-André-les-Vergers"
+   }
+  ],
+  "priceRange": "290 € - 1 290 €",
+  "knowsAbout": [
+   "Site internet artisan",
+   "Fiche Google Business Profile",
+   "Référencement local"
+  ],
+  "hasOfferCatalog": {
+   "@type": "OfferCatalog",
+   "name": "Formules ADOM Digital",
+   "itemListElement": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://adom.digital/#business",
-      "name": "ADOM Digital",
-      "description": "Création de sites vitrine pour artisans et professionnels du BTP à Troyes et dans l'Aube (10). Spécialiste, pas généraliste.",
-      "url": "https://adom.digital",
-      "telephone": "+33646642032",
-      "email": "aimerickdomingues6@gmail.com",
-      "founder": {"@type": "Person", "name": "Aimerick Domingues"},
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "24 rue de la Mission",
-        "addressLocality": "Troyes",
-        "postalCode": "10000",
-        "addressCountry": "FR"
-      },
-      "geo": {"@type": "GeoCoordinates", "latitude": 48.2973, "longitude": 4.0744},
-      "areaServed": [{"@type": "City", "name": "Troyes"}, {"@type": "AdministrativeArea", "name": "Aube"}],
-      "priceRange": "€€",
-      "currenciesAccepted": "EUR",
-      "paymentAccepted": "Virement bancaire, chèque",
-      "openingHours": "Mo-Fr 09:00-18:00"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "Pourquoi les modules ne sont-ils pas inclus d'office ?", "acceptedAnswer": {"@type": "Answer", "text": "Parce qu'un plombier solo n'a pas les mêmes besoins qu'une entreprise de maçonnerie de 5 personnes. Les modules s'ajoutent au socle selon votre situation réelle. Vous ne payez que ce qui vous est utile."}},
-        {"@type": "Question", "name": "Combien coûte un site vitrine pour artisan à Troyes ?", "acceptedAnswer": {"@type": "Answer", "text": "Le socle commence à 490€ HT (Essentiel, livraison 14 jours) et 890€ HT (Pro + Présence Locale, multi-pages, Google Business, SEO renforcé). Des modules optionnels peuvent être ajoutés."}},
-        {"@type": "Question", "name": "Que se passe-t-il si le délai de 14 jours n'est pas tenu ?", "acceptedAnswer": {"@type": "Answer", "text": "Le solde (70%) n'est pas dû. Ce délai court à partir de la réception de vos contenus — textes, photos, logo."}},
-        {"@type": "Question", "name": "Puis-je commencer avec l'Essentiel et ajouter des modules plus tard ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Le socle est conçu pour ça. Les modules s'ajoutent à tout moment sans refaire le site."}}
-      ]
-    },
-    {
+     "@type": "Offer",
+     "price": "290",
+     "priceCurrency": "EUR",
+     "itemOffered": {
       "@type": "Service",
-      "name": "Création site vitrine artisan BTP",
-      "provider": {"@type": "LocalBusiness", "name": "ADOM Digital"},
-      "areaServed": {"@type": "Place", "name": "Troyes, Aube, Grand Est"},
-      "description": "Sites vitrine professionnels pour artisans et pros du BTP, livrés en 14 jours.",
-      "offers": {"@type": "AggregateOffer", "priceCurrency": "EUR", "lowPrice": "490", "highPrice": "890"}
+      "name": "Pack Google",
+      "description": "Fiche Google complète, photos de chantier, QR code d'avis et sollicitation des 10 premiers avis.",
+      "areaServed": "Aube",
+      "provider": {
+       "@id": "https://adom.digital/#entreprise"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "price": "790",
+     "priceCurrency": "EUR",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Site Essentiel",
+      "description": "Pack Google et site d'une page avec textes rédigés, livré en 14 jours.",
+      "areaServed": "Aube",
+      "provider": {
+       "@id": "https://adom.digital/#entreprise"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "price": "1290",
+     "priceCurrency": "EUR",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Site Pro",
+      "description": "Pack Google, site jusqu'à 5 pages, estimateur de prix et 3 mois de suivi offerts.",
+      "areaServed": "Aube",
+      "provider": {
+       "@id": "https://adom.digital/#entreprise"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "price": "39",
+     "priceCurrency": "EUR",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Suivi Chantiers",
+      "description": "Hébergement, une modification et une publication Google par mois, relance d'avis, bilan mensuel. Prix mensuel, sans engagement.",
+      "areaServed": "Aube",
+      "provider": {
+       "@id": "https://adom.digital/#entreprise"
+      }
+     }
     }
+   ]
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Combien coûte un site internet pour un artisan ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Le site Essentiel coûte 790 € HT : un site d'une page, votre fiche Google complète et vos textes rédigés. Le site Pro coûte 1 290 € HT : jusqu'à 5 pages, un estimateur de prix et 3 mois de Suivi offerts. TVA non applicable. Aucun abonnement n'est obligatoire."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "En combien de temps mon site est-il en ligne ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "En 14 jours après réception de votre dossier complet. Si ce délai n'est pas tenu de mon fait, vous ne payez pas le solde de 70 %, et vous gardez le site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Le site m'appartient-il ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Oui. Une fois le site payé, il est à vous. Le nom de domaine est enregistré à votre nom, et je vous remets les fichiers du site sur simple demande."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Puis-je arrêter le Suivi Chantiers quand je veux ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Oui. Le Suivi est sans engagement : vous l'arrêtez par email, avec un préavis d'un mois. Votre site reste en ligne et reste à vous."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Qu'est-ce que je dois fournir ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Les informations légales de votre entreprise, votre logo si vous en avez un, l'accès à votre nom de domaine et à votre fiche Google, et une heure d'entretien pour les textes. Les photos de chantier, je peux les prendre sur place."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Pourquoi commencer par la fiche Google ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Quand un particulier cherche « maçon Troyes », Google affiche souvent les fiches avec la carte, les avis et le bouton d'appel avant les sites. Une fiche complète et bien notée vous fait appeler, avec ou sans site."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "À quoi sert l'estimateur de prix ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Votre client indique ses travaux et ses mesures, et il voit une fourchette calculée avec vos tarifs. Il vous appelle en connaissant l'ordre de prix. Ce n'est jamais un prix ferme : le devis après visite reste le seul engagement."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Vous vous déplacez ?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Oui, partout dans l'Aube. Le premier rendez-vous se fait sur votre chantier, à votre bureau ou par téléphone, comme vous préférez."
+    }
+   }
   ]
-}
+ }
+]
 </script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-
-<style>
-/* ── RESET ── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--n); color: var(--w); -webkit-font-smoothing: antialiased; overflow-x: hidden; cursor: none; }
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { cursor: none; border: none; background: none; font: inherit; }
-ul { list-style: none; }
-
-/* ── TOKENS ── */
-:root {
-  --t:   #2DD4BF;
-  --t2:  #20b2a0;
-  --n:   #0D1117;
-  --n2:  #0A0E15;
-  --n3:  #161B22;
-  --w:   #FFFFFF;
-  --cr:  #F4F1EB;
-  --tx:  #1A1A1A;
-  --s:   #64748B;
-  --error:   #EF4444;
-  --success: #22C55E;
-  --r:  12px;
-  --r2: 20px;
-  --r3: 28px;
-}
-
-/* ── CURSOR ── */
-.cur-ring { position: fixed; width: 36px; height: 36px; border: 1.5px solid rgba(45,212,191,.55); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: width .18s, height .18s, border-color .18s, background .18s; will-change: left, top; }
-.cur-dot  { position: fixed; width: 5px; height: 5px; background: var(--t); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); will-change: left, top; }
-.cur-ring.big { width: 52px; height: 52px; border-color: var(--t); background: rgba(45,212,191,.06); }
-.cur-ring.gone, .cur-dot.gone { opacity: 0; }
-
-/* ── PROGRESS ── */
-#rprog { position: fixed; top: 0; left: 0; height: 2px; width: 100%; background: var(--t); transform-origin: left; transform: scaleX(0); z-index: 9998; }
-
-/* ── NAV ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  height: 64px; padding: 0 clamp(16px,4vw,48px);
-  display: flex; align-items: center; justify-content: space-between;
-  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-  background: rgba(13,17,23,.82);
-  transition: box-shadow .3s;
-}
-nav.scrolled { box-shadow: 0 1px 0 rgba(255,255,255,.07); }
-.logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; }
-.logo span { color: var(--t); }
-.nav-links { display: flex; align-items: center; gap: 32px; }
-.nav-links a { font-size: .875rem; font-weight: 500; color: rgba(255,255,255,.65); transition: color .2s; }
-.nav-links a:hover { color: var(--w); }
-.nav-links .nav-cta { background: var(--t); color: var(--tx); padding: 8px 20px; border-radius: var(--r); font-weight: 700; font-size: .85rem; transition: background .2s, transform .15s; }
-.nav-links .nav-cta:hover { background: var(--t2); transform: translateY(-1px); color: var(--tx); }
-.burger { display: none; flex-direction: column; gap: 5px; padding: 8px; border-radius: var(--r); }
-.burger span { display: block; width: 22px; height: 2px; background: var(--w); border-radius: 2px; transition: transform .3s, opacity .3s; }
-@media(max-width:900px) {
-  .burger { display: flex; }
-  .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--n2); border-top: 1px solid rgba(255,255,255,.06); padding: 8px 16px 16px; flex-direction: column; align-items: stretch; gap: 2px; }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: 12px 16px; border-radius: var(--r); color: rgba(255,255,255,.75); }
-  .nav-links a:hover { background: rgba(255,255,255,.05); color: var(--w); }
-  .nav-links .nav-cta { margin-top: 8px; text-align: center; }
-}
-.burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.burger.open span:nth-child(2) { opacity: 0; }
-.burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-/* ── STICKY CTA MOBILE ── */
-.sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 800; padding: 16px 16px 28px; background: linear-gradient(to top, var(--n) 65%, transparent); transform: translateY(100%); transition: transform .4s cubic-bezier(.16,1,.3,1); }
-.sticky-cta a { display: block; text-align: center; background: var(--t); color: var(--tx); font-weight: 700; font-size: .95rem; padding: 15px; border-radius: var(--r); box-shadow: 0 8px 32px rgba(45,212,191,.3); }
-.sticky-cta.show { transform: translateY(0); }
-@media(max-width:600px) { .sticky-cta { display: block; } }
-
-/* ── LAYOUT HELPERS ── */
-.wrap { max-width: 1140px; margin: 0 auto; }
-section { padding: clamp(72px,9vw,120px) clamp(16px,4vw,48px); }
-.sec-label { font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--t); margin-bottom: 10px; }
-.sec-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(26px,3.2vw,42px); line-height: 1.13; letter-spacing: -.025em; }
-.sec-sub { font-size: clamp(15px,1.5vw,17px); color: rgba(255,255,255,.55); line-height: 1.75; margin-top: 14px; }
-.sec-head { margin-bottom: clamp(40px,5vw,64px); }
-.sec-head.center { text-align: center; }
-.sec-head.center .sec-sub { max-width: 560px; margin-left: auto; margin-right: auto; }
-
-/* ── BUTTONS ── */
-.btn-p {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--t); color: var(--tx); font-weight: 700; font-size: .95rem;
-  padding: 14px 28px; border-radius: var(--r);
-  transition: background .2s, transform .15s, box-shadow .2s;
-}
-.btn-p:hover { background: var(--t2); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(45,212,191,.28); }
-.btn-s {
-  display: inline-flex; align-items: center; gap: 8px;
-  border: 1.5px solid rgba(255,255,255,.2); color: rgba(255,255,255,.75); font-weight: 600; font-size: .95rem;
-  padding: 14px 24px; border-radius: var(--r);
-  transition: border-color .2s, color .2s, transform .15s;
-}
-.btn-s:hover { border-color: rgba(255,255,255,.5); color: var(--w); transform: translateY(-1px); }
-
-/* ── HERO ── */
-.hero { min-height: 100svh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 80px clamp(16px,4vw,48px) clamp(48px,6vw,88px); }
-.hero-bg { position: absolute; inset: 0; z-index: 0; background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=75&auto=format&fit=crop'); background-size: cover; background-position: center; }
-.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(13,17,23,.97) 0%, rgba(13,17,23,.84) 55%, rgba(13,17,23,.6) 100%); }
-.hero-body { position: relative; z-index: 1; max-width: 780px; }
-.hero-pill { display: inline-flex; align-items: center; gap: 8px; background: rgba(45,212,191,.09); border: 1px solid rgba(45,212,191,.24); border-radius: 9999px; padding: 6px 14px; margin-bottom: 28px; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--t); }
-.hero-pulse { width: 6px; height: 6px; border-radius: 50%; background: var(--t); animation: pulse 2.2s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.45;transform:scale(.75)} }
-.hero h1 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(36px,5.5vw,64px); line-height: 1.08; letter-spacing: -.03em; margin-bottom: 20px; }
-.hero h1 em { font-style: normal; color: var(--t); }
-.hero-sub { font-size: clamp(15px,1.6vw,18px); color: rgba(255,255,255,.62); line-height: 1.72; max-width: 540px; margin-bottom: 36px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
-.hero-badges { display: flex; flex-wrap: wrap; gap: 8px; }
-.hbadge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09); border-radius: 9999px; padding: 6px 12px; font-size: .78rem; color: rgba(255,255,255,.55); }
-.hbadge svg { color: var(--t); flex-shrink: 0; }
-
-/* ── STATS ── */
-.stats-bar { background: var(--n3); border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); padding: 36px clamp(16px,4vw,48px); }
-.stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; }
-.stat { text-align: center; padding: 12px; position: relative; }
-.stat+.stat::before { content: ''; position: absolute; left: 0; top: 15%; bottom: 15%; width: 1px; background: rgba(255,255,255,.08); }
-.stat-val { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(26px,3vw,40px); color: var(--t); line-height: 1; }
-.stat-label { font-size: .78rem; color: rgba(255,255,255,.45); margin-top: 5px; line-height: 1.4; }
-@media(max-width:600px) { .stats-grid { grid-template-columns: repeat(2,1fr); } .stat+.stat::before { display: none; } }
-
-/* ── PROBLÈME ── */
-.pb-section { background: var(--n2); }
-.pb-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
-.pb-card { background: var(--n3); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r2); padding: 28px; transition: border-color .3s; }
-.pb-card:hover { border-color: rgba(45,212,191,.18); }
-.pb-icon { font-size: 1.5rem; margin-bottom: 14px; }
-.pb-card h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: .975rem; margin-bottom: 8px; }
-.pb-card p { font-size: .855rem; color: rgba(255,255,255,.52); line-height: 1.68; }
-@media(max-width:900px) { .pb-grid { grid-template-columns: 1fr; } }
-
-/* ── SOCLE ── */
-.socle-section { background: var(--n); }
-.socle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
-.sc { background: var(--n3); border: 1px solid rgba(255,255,255,.08); border-radius: var(--r3); padding: 36px; transition: border-color .3s; }
-.sc.feat { border-color: rgba(45,212,191,.3); background: linear-gradient(150deg, rgba(45,212,191,.055) 0%, var(--n3) 55%); }
-.sc-badge { display: inline-block; background: var(--t); color: var(--tx); font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border-radius: 9999px; margin-bottom: 18px; }
-.sc-name { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.35rem; margin-bottom: 6px; }
-.sc-tagline { font-size: .855rem; color: rgba(255,255,255,.45); margin-bottom: 24px; line-height: 1.5; }
-.sc-price { margin-bottom: 26px; }
-.sc-amount { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(30px,3.2vw,44px); color: var(--t); }
-.sc-ht { font-size: .8rem; color: rgba(255,255,255,.35); margin-left: 4px; }
-.sc-features { display: flex; flex-direction: column; gap: 9px; margin-bottom: 28px; }
-.sc-features li { display: flex; align-items: flex-start; gap: 9px; font-size: .855rem; color: rgba(255,255,255,.72); line-height: 1.45; }
-.sc-features li::before { content: ''; display: inline-block; width: 16px; height: 16px; min-width: 16px; margin-top: 1px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Ccircle cx='8' cy='8' r='7' stroke='%232DD4BF' stroke-width='1.5'/%3E%3Cpath d='M5 8.2l2 2 4-4' stroke='%232DD4BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center; }
-.sc-cta { display: block; text-align: center; font-weight: 700; font-size: .95rem; padding: 14px; border-radius: var(--r); transition: all .2s; }
-.sc.feat .sc-cta { background: var(--t); color: var(--tx); }
-.sc.feat .sc-cta:hover { background: var(--t2); box-shadow: 0 6px 22px rgba(45,212,191,.28); }
-.sc:not(.feat) .sc-cta { border: 1.5px solid rgba(255,255,255,.18); color: rgba(255,255,255,.75); }
-.sc:not(.feat) .sc-cta:hover { border-color: rgba(255,255,255,.45); color: var(--w); }
-.sc-note { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.07); font-size: .78rem; color: rgba(255,255,255,.35); }
-@media(max-width:760px) { .socle-grid { grid-template-columns: 1fr; } }
-
-/* ── MODULES ── */
-.modules-section { background: var(--n2); }
-.mc-list { display: flex; flex-direction: column; gap: 14px; }
-.mc { background: var(--n3); border: 1px solid rgba(255,255,255,.07); border-radius: var(--r2); padding: 28px 32px; display: grid; grid-template-columns: 1fr auto; gap: 16px 40px; align-items: center; transition: border-color .3s; }
-.mc:hover { border-color: rgba(45,212,191,.22); }
-.mc-tag { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--t); margin-bottom: 6px; }
-.mc-pain { font-size: .87rem; color: rgba(255,255,255,.4); font-style: italic; margin-bottom: 10px; line-height: 1.5; }
-.mc h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 6px; }
-.mc p { font-size: .855rem; color: rgba(255,255,255,.58); line-height: 1.68; }
-.mc-price { text-align: right; }
-.mc-amount { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.45rem; color: var(--t); display: block; white-space: nowrap; }
-.mc-rec { font-size: .72rem; color: rgba(255,255,255,.32); margin-top: 3px; white-space: nowrap; }
-.mc-note { margin-top: 20px; text-align: center; font-size: .82rem; color: rgba(255,255,255,.38); }
-.mc-note strong { color: rgba(255,255,255,.6); }
-@media(max-width:640px) { .mc { grid-template-columns: 1fr; } .mc-price { text-align: left; } }
-
-/* ── GARANTIE ── */
-.garantie-section { background: var(--n); }
-.g-box { border: 1px solid rgba(45,212,191,.28); border-radius: var(--r3); padding: clamp(32px,4vw,56px); background: linear-gradient(135deg, rgba(45,212,191,.055) 0%, transparent 55%); display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
-.g-icon { font-size: 2.8rem; margin-bottom: 14px; }
-.g-box h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(22px,2.4vw,32px); margin-bottom: 12px; line-height: 1.2; }
-.g-box p { font-size: clamp(14px,1.3vw,15.5px); color: rgba(255,255,255,.6); line-height: 1.78; }
-.g-stats { display: flex; flex-direction: column; gap: 20px; }
-.g-row { display: flex; align-items: flex-start; gap: 18px; }
-.g-num { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.9rem; color: var(--t); min-width: 72px; line-height: 1; }
-.g-text { font-size: .855rem; color: rgba(255,255,255,.5); line-height: 1.55; padding-top: 3px; }
-@media(max-width:760px) { .g-box { grid-template-columns: 1fr; } }
-
-/* ── PROCESSUS ── */
-.processus-section { background: var(--n2); }
-.process-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; }
-.process-grid::before { content: ''; position: absolute; top: 23px; left: calc(12.5% + 10px); right: calc(12.5% + 10px); height: 1px; background: linear-gradient(90deg, var(--t) 0%, rgba(45,212,191,.12) 100%); z-index: 0; pointer-events: none; }
-.ps { text-align: center; padding: 0 12px; position: relative; z-index: 1; }
-.ps-num { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--t); background: var(--n2); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-weight: 800; font-size: .9rem; color: var(--t); margin: 0 auto 18px; }
-.ps h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: .925rem; margin-bottom: 6px; }
-.ps p { font-size: .8rem; color: rgba(255,255,255,.42); line-height: 1.62; }
-@media(max-width:760px) { .process-grid { grid-template-columns: 1fr 1fr; gap: 32px; } .process-grid::before { display: none; } }
-@media(max-width:480px) { .process-grid { grid-template-columns: 1fr; gap: 28px; } }
-
-/* ── RÉALISATION ── */
-.real-section { background: var(--n); }
-.case-study { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; background: var(--n3); border: 1px solid rgba(255,255,255,.07); border-radius: var(--r3); padding: clamp(28px,3.5vw,52px); }
-.case-img { border-radius: var(--r2); overflow: hidden; }
-.case-img img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--r2); max-height: 360px; }
-.case-meta { font-size: .8rem; color: rgba(255,255,255,.4); margin-bottom: 6px; }
-.case-study h3 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.15rem; margin-bottom: 10px; }
-.case-study .case-intro { font-size: .875rem; color: rgba(255,255,255,.58); line-height: 1.72; margin-bottom: 20px; }
-.kpis { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
-.kpi { background: rgba(45,212,191,.08); border: 1px solid rgba(45,212,191,.2); border-radius: var(--r); padding: 12px 16px; }
-.kpi-val { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--t); }
-.kpi-label { font-size: .72rem; color: rgba(255,255,255,.45); margin-top: 2px; }
-.case-quote { padding-left: 14px; border-left: 2px solid var(--t); font-size: .875rem; color: rgba(255,255,255,.62); font-style: italic; line-height: 1.72; }
-.case-quote cite { display: block; margin-top: 8px; font-style: normal; font-size: .78rem; color: rgba(255,255,255,.32); }
-@media(max-width:760px) { .case-study { grid-template-columns: 1fr; } }
-
-/* ── TÉMOIGNAGES ── */
-.temo-section { background: var(--n2); }
-.temo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
-.temo-card { background: var(--n3); border: 1px solid rgba(255,255,255,.07); border-radius: var(--r2); padding: 26px; transition: border-color .3s; }
-.temo-card:hover { border-color: rgba(45,212,191,.2); }
-.stars { color: var(--t); font-size: .85rem; letter-spacing: 2px; margin-bottom: 14px; }
-.temo-text { font-size: .875rem; color: rgba(255,255,255,.68); line-height: 1.78; margin-bottom: 20px; }
-.temo-author { display: flex; align-items: center; gap: 11px; }
-.temo-av { width: 38px; height: 38px; border-radius: 50%; background: rgba(45,212,191,.12); border: 1.5px solid rgba(45,212,191,.28); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-weight: 700; font-size: .85rem; color: var(--t); flex-shrink: 0; }
-.temo-name { font-weight: 600; font-size: .855rem; }
-.temo-job { font-size: .76rem; color: rgba(255,255,255,.38); margin-top: 1px; }
-@media(max-width:900px) { .temo-grid { grid-template-columns: 1fr; } }
-
-/* ── FAQ ── */
-.faq-section { background: var(--n); }
-.faq-list { max-width: 740px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
-details { background: var(--n3); border: 1px solid rgba(255,255,255,.07); border-radius: var(--r2); overflow: hidden; transition: border-color .3s; }
-details[open] { border-color: rgba(45,212,191,.24); }
-summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 24px; cursor: none; font-family: 'Syne', sans-serif; font-weight: 700; font-size: .93rem; line-height: 1.4; list-style: none; user-select: none; }
-summary::-webkit-details-marker { display: none; }
-.faq-chev { width: 20px; height: 20px; flex-shrink: 0; color: var(--t); transition: transform .3s; }
-details[open] .faq-chev { transform: rotate(180deg); }
-.faq-body { padding: 0 24px 20px; font-size: .875rem; color: rgba(255,255,255,.58); line-height: 1.78; }
-
-/* ── CONTACT ── */
-.contact-section { background: var(--n2); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.45fr; gap: 56px; align-items: start; }
-.contact-info h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(24px,2.4vw,34px); line-height: 1.18; margin-bottom: 14px; }
-.contact-info .ci-sub { font-size: clamp(14px,1.35vw,15.5px); color: rgba(255,255,255,.58); line-height: 1.75; margin-bottom: 32px; }
-.ci-promises { display: flex; flex-direction: column; gap: 12px; }
-.ci-row { display: flex; align-items: flex-start; gap: 10px; font-size: .875rem; color: rgba(255,255,255,.62); }
-.ci-icon { color: var(--t); flex-shrink: 0; margin-top: 2px; }
-.cf-wrap { background: var(--n3); border: 1px solid rgba(255,255,255,.07); border-radius: var(--r3); padding: clamp(24px,3vw,40px); }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.fg { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
-.fg label { font-size: .78rem; font-weight: 600; color: rgba(255,255,255,.55); letter-spacing: .04em; }
-.fg input, .fg select, .fg textarea {
-  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1);
-  border-radius: var(--r); padding: 11px 14px; color: var(--w);
-  font: inherit; font-size: .9rem; width: 100%;
-  transition: border-color .2s, box-shadow .2s;
-}
-.fg input:focus, .fg select:focus, .fg textarea:focus { outline: none; border-color: var(--t); box-shadow: 0 0 0 3px rgba(45,212,191,.15); }
-.fg select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748B' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
-.fg select option { background: var(--n2); }
-.fg textarea { resize: vertical; min-height: 96px; }
-.fg input::placeholder, .fg textarea::placeholder { color: rgba(255,255,255,.22); }
-.fe { font-size: .76rem; color: var(--error); margin-top: 3px; display: none; }
-.fe.on { display: block; }
-.hp-field { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
-.form-submit { width: 100%; background: var(--t); color: var(--tx); font-weight: 700; font-size: .975rem; padding: 15px; border-radius: var(--r); transition: background .2s, transform .15s, box-shadow .2s; margin-top: 4px; }
-.form-submit:hover { background: var(--t2); transform: translateY(-1px); box-shadow: 0 8px 28px rgba(45,212,191,.28); }
-.form-submit:disabled { opacity: .55; cursor: not-allowed; transform: none; box-shadow: none; }
-.form-err { background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.28); border-radius: var(--r); padding: 11px 14px; font-size: .855rem; color: #FCA5A5; margin-top: 12px; display: none; }
-.form-err.on { display: block; }
-.form-ok { display: none; text-align: center; padding: 32px 20px; }
-.form-ok.on { display: block; }
-.form-ok-icon { font-size: 2.4rem; margin-bottom: 14px; }
-.form-ok h3 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; margin-bottom: 8px; }
-.form-ok p { font-size: .875rem; color: rgba(255,255,255,.58); line-height: 1.68; }
-.form-ok a { color: var(--t); }
-@media(max-width:760px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
-
-/* ── FOOTER ── */
-footer { background: var(--n2); border-top: 1px solid rgba(255,255,255,.06); padding: clamp(48px,5vw,72px) clamp(16px,4vw,48px) 32px; }
-.footer-grid { max-width: 1140px; margin: 0 auto 40px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
-.footer-brand .logo { font-size: 1.15rem; }
-.footer-brand p { font-size: .84rem; color: rgba(255,255,255,.38); line-height: 1.7; margin-top: 10px; max-width: 280px; }
-.footer-col h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: .84rem; margin-bottom: 14px; }
-.footer-col li { margin-bottom: 8px; }
-.footer-col a { font-size: .84rem; color: rgba(255,255,255,.38); transition: color .2s; }
-.footer-col a:hover { color: var(--w); }
-.footer-bottom { max-width: 1140px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.footer-bottom p, .footer-bottom a { font-size: .76rem; color: rgba(255,255,255,.3); }
-.footer-bottom a:hover { color: rgba(255,255,255,.65); }
-@media(max-width:760px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
-
-/* ── MODALS ── */
-.modal-ov { display: none; position: fixed; inset: 0; z-index: 10000; align-items: center; justify-content: center; padding: 16px; background: rgba(0,0,0,.72); backdrop-filter: blur(4px); }
-.modal-ov.open { display: flex; }
-.modal-box { background: var(--n2); border: 1px solid rgba(255,255,255,.1); border-radius: var(--r3); max-width: 680px; width: 100%; max-height: 86vh; overflow-y: auto; padding: clamp(24px,3vw,44px); position: relative; }
-.modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,.07); border-radius: 50%; font-size: .9rem; color: rgba(255,255,255,.55); transition: background .2s, color .2s; }
-.modal-close:hover { background: rgba(255,255,255,.12); color: var(--w); }
-.modal-box h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.25rem; margin-bottom: 18px; }
-.modal-box h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: .95rem; margin: 18px 0 6px; }
-.modal-box p, .modal-box li { font-size: .855rem; color: rgba(255,255,255,.58); line-height: 1.8; }
-.modal-box ul { padding-left: 18px; margin-bottom: 10px; }
-.modal-box a { color: var(--t); }
-
-/* ── COOKIE BANNER ── */
-.cookie-b { position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 520px; z-index: 9000; background: var(--n2); border: 1px solid rgba(255,255,255,.1); border-radius: var(--r2); padding: 20px 22px; box-shadow: 0 20px 60px rgba(0,0,0,.65); transform: translateY(calc(100% + 24px)); transition: transform .5s cubic-bezier(.16,1,.3,1); }
-.cookie-b.show { transform: translateY(0); }
-.cookie-b p { font-size: .83rem; color: rgba(255,255,255,.62); line-height: 1.6; margin-bottom: 14px; }
-.cookie-b p a { color: var(--t); }
-.cookie-toggles { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
-.ct-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.ct-label { font-size: .8rem; color: rgba(255,255,255,.68); }
-.ct-label span { display: block; font-size: .72rem; color: rgba(255,255,255,.32); margin-top: 1px; }
-.toggle { position: relative; width: 40px; height: 22px; flex-shrink: 0; }
-.toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
-.track { position: absolute; inset: 0; background: rgba(255,255,255,.1); border-radius: 11px; cursor: pointer; transition: background .3s; }
-.track::after { content: ''; position: absolute; left: 3px; top: 3px; width: 16px; height: 16px; background: var(--w); border-radius: 50%; transition: transform .3s; }
-.toggle input:checked + .track { background: var(--t); }
-.toggle input:checked + .track::after { transform: translateX(18px); }
-.cookie-btns { display: flex; gap: 8px; }
-.cookie-accept { flex: 1; background: var(--t); color: var(--tx); font-weight: 700; font-size: .83rem; padding: 9px; border-radius: var(--r); }
-.cookie-refuse { flex: 1; border: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.58); font-size: .83rem; padding: 9px; border-radius: var(--r); }
-
-/* ── UTILS ── */
-[data-r] { opacity: 0; transform: translateY(22px); }
-@media(prefers-reduced-motion: reduce) { [data-r] { opacity: 1 !important; transform: none !important; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
-</style>
 </head>
 <body>
-
-<!-- Cursor -->
-<div class="cur-ring" id="cur-ring" aria-hidden="true"></div>
-<div class="cur-dot"  id="cur-dot"  aria-hidden="true"></div>
-
-<!-- Read progress -->
-<div id="rprog" role="progressbar" aria-hidden="true"></div>
-
-<!-- ═══ COOKIE BANNER ═══ -->
-<div class="cookie-b" id="cookie-b" role="dialog" aria-label="Gestion des cookies">
-  <p>Nous utilisons des cookies pour améliorer votre expérience. <a href="#modal-cookies">En savoir plus</a></p>
-  <div class="cookie-toggles">
-    <div class="ct-row">
-      <div class="ct-label">Nécessaires<span>Toujours actifs — sécurité et fonctionnement</span></div>
-      <label class="toggle"><input type="checkbox" checked disabled aria-label="Cookies nécessaires"><span class="track"></span></label>
-    </div>
-    <div class="ct-row">
-      <div class="ct-label">Google Fonts<span>Chargement de la typographie</span></div>
-      <label class="toggle"><input type="checkbox" id="tgl-fonts" aria-label="Autoriser Google Fonts"><span class="track"></span></label>
-    </div>
-    <div class="ct-row">
-      <div class="ct-label">Analytique<span>Google Analytics — mesure d'audience anonyme</span></div>
-      <label class="toggle"><input type="checkbox" id="tgl-analytics" aria-label="Autoriser Google Analytics"><span class="track"></span></label>
-    </div>
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="conteneur">
+    <a class="logo" href="/" aria-label="ADOM Digital, accueil"><span class="logo-mot">ADOM</span><span class="logo-cote" aria-hidden="true"></span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#devis">Tarifs</a>
+      <a href="#demo">Démo</a>
+      <a href="#garantie">Garantie</a>
+      <a href="#faq">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-petit" href="/audit/">Audit Google gratuit</a>
   </div>
-  <div class="cookie-btns">
-    <button class="cookie-accept" id="cookie-ok">Accepter la sélection</button>
-    <button class="cookie-refuse" id="cookie-no">Refuser</button>
-  </div>
-</div>
+</header>
 
-<!-- ═══ NAV ═══ -->
-<nav id="nav" role="navigation" aria-label="Navigation principale">
-  <a href="/" class="logo" aria-label="ADOM Digital — accueil">ADOM<span>.</span></a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#socle">L'offre</a></li>
-    <li><a href="#modules">Les modules</a></li>
-    <li><a href="#realisation">Réalisation</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact" class="nav-cta">Devis gratuit</a></li>
-  </ul>
-  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+<main id="contenu">
 
-<!-- Sticky CTA mobile -->
-<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
-  <a href="#contact">Obtenir mon devis gratuit — sous 24h</a>
-</div>
-
-<main>
-
-<!-- ═══ HERO ═══ -->
-<section class="hero" aria-labelledby="hero-h1">
-  <div class="hero-bg" role="img" aria-label="Artisan maçon au travail sur un chantier"></div>
-  <div class="hero-body">
-    <div class="hero-pill" data-r>
-      <span class="hero-pulse" aria-hidden="true"></span>
-      Spécialiste BTP · Troyes &amp; Aube (10)
+<section class="hero" aria-labelledby="titre-accueil">
+  <div class="conteneur">
+    <h1 id="titre-accueil">Le site internet des artisans du bâtiment de l'Aube.</h1>
+    <div class="cote" role="img" aria-label="Livré en 14 jours">
+      <span class="cote-ligne"></span><span class="cote-valeur">livré en 14 jours</span><span class="cote-ligne"></span>
     </div>
-    <h1 id="hero-h1" data-r>
-      Votre site vitrine.<br>
-      <em>Vos clients vous trouvent.</em><br>
-      Vos devis rentrent.
-    </h1>
-    <p class="hero-sub" data-r>
-      Site professionnel livré en 14 jours, conçu pour les artisans du BTP
-      qui veulent décrocher des chantiers — pas gérer un site.
-    </p>
-    <div class="hero-actions" data-r>
-      <a href="#contact" class="btn-p">
-        Obtenir mon devis gratuit
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="#realisation" class="btn-s">Voir une réalisation</a>
+    <p class="hero-suite">Et il vous appartient.</p>
+    <p class="chapo">Votre fiche Google, votre site et une estimation de prix en ligne, pour que vos clients vous appellent en sachant déjà ce qu'ils veulent. Prix affichés, rendez-vous en personne à Troyes et dans toute l'Aube.</p>
+    <div class="actions">
+      <a class="btn" href="/audit/">Demander l'audit gratuit de votre fiche Google</a>
+      <a class="btn btn-second" href="#devis">Voir les prix</a>
     </div>
-    <div class="hero-badges" data-r>
-      <span class="hbadge">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5l1.8 4.2H14l-3.4 2.5 1.3 4L8 9.8 4.1 12.2l1.3-4L2 5.7h4.2z" fill="currentColor"/></svg>
-        14 jours ou solde offert
-      </span>
-      <span class="hbadge">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        Réponse sous 24h
-      </span>
-      <span class="hbadge">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 10.5l4-4 3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Spécialiste artisans BTP
-      </span>
-    </div>
+    <ul class="hero-preuves">
+      <li>Livré en 14 jours, sinon le solde n'est pas dû.</li>
+      <li>Le site est à vous, le nom de domaine à votre nom.</li>
+      <li>Un interlocuteur à Troyes, qui connaît les métiers du bâtiment.</li>
+    </ul>
   </div>
 </section>
 
-<!-- ═══ STATS ═══ -->
-<div class="stats-bar" aria-label="Chiffres clés">
-  <div class="wrap">
-    <div class="stats-grid">
-      <div class="stat" data-r>
-        <div class="stat-val"><span data-c="24">0</span>h</div>
-        <div class="stat-label">Réponse garantie</div>
-      </div>
-      <div class="stat" data-r>
-        <div class="stat-val"><span data-c="14">0</span>j</div>
-        <div class="stat-label">Livraison garantie</div>
-      </div>
-      <div class="stat" data-r>
-        <div class="stat-val"><span data-c="490">0</span>€</div>
-        <div class="stat-label">Dès 490€ HT</div>
-      </div>
-      <div class="stat" data-r>
-        <div class="stat-val"><span data-c="100">0</span>%</div>
-        <div class="stat-label">Dédié BTP Troyes</div>
-      </div>
+<section class="section blanc" id="devis" aria-labelledby="titre-devis">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">01 · Tarifs</span>
+      <h2 id="titre-devis">Le prix, lu comme un devis.</h2>
+      <p class="chapo">Choisissez une formule et cochez les options : le total se met à jour. Pas de prix caché, pas d'abonnement obligatoire.</p>
     </div>
-  </div>
-</div>
 
-<!-- ═══ PROBLÈME ═══ -->
-<section class="pb-section" aria-labelledby="pb-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-label" data-r>Le problème</p>
-      <h2 class="sec-title" id="pb-title" data-r>Un artisan qui n'existe pas en ligne<br>perd des chantiers — point.</h2>
-      <p class="sec-sub" data-r>Les annuaires, le bouche-à-oreille et Facebook ne suffisent plus. Vos concurrents ont un site. Vos clients cherchent sur Google.</p>
-    </div>
-    <div class="pb-grid">
-      <div class="pb-card" data-r>
-        <div class="pb-icon" aria-hidden="true">🔍</div>
-        <h3>Invisible sur Google</h3>
-        <p>Un client tape "maçon Troyes" — il appelle votre concurrent, pas vous. Sans site optimisé pour votre zone, vous n'existez pas.</p>
-      </div>
-      <div class="pb-card" data-r>
-        <div class="pb-icon" aria-hidden="true">📋</div>
-        <h3>Devis perçus comme "au pif"</h3>
-        <p>Sans site professionnel, les clients doutent de votre sérieux. Ils négocient plus fort, ou vont ailleurs sans rappeler.</p>
-      </div>
-      <div class="pb-card" data-r>
-        <div class="pb-icon" aria-hidden="true">⏳</div>
-        <h3>Vous vous présentez à chaque appel</h3>
-        <p>Vous réexpliquez votre activité à chaque nouveau contact. Un site bien fait répond aux premières questions avant que le client décroche.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ SOCLE ═══ -->
-<section class="socle-section" id="socle" aria-labelledby="socle-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-label" data-r>Le socle</p>
-      <h2 class="sec-title" id="socle-title" data-r>Votre site vitrine — deux formules, une seule promesse</h2>
-      <p class="sec-sub" data-r>Choisissez la formule adaptée à votre activité. Les modules optionnels s'ajoutent ensuite, selon vos besoins réels — pas avant.</p>
-    </div>
-    <div class="socle-grid">
-
-      <!-- Essentiel -->
-      <div class="sc" data-r>
-        <div class="sc-name">Essentiel</div>
-        <p class="sc-tagline">Site one-page professionnel, efficace, livré rapidement.</p>
-        <div class="sc-price">
-          <span class="sc-amount">490€</span><span class="sc-ht"> HT · paiement en 2 fois</span>
-        </div>
-        <ul class="sc-features" aria-label="Ce qui est inclus dans l'Essentiel">
-          <li>Site one-page mobile-first professionnel</li>
-          <li>Formulaire de contact sécurisé</li>
-          <li>Référencement local (Troyes, Aube)</li>
-          <li>Livraison garantie en 14 jours</li>
-          <li>1 cycle de retouches inclus</li>
-          <li>Hébergement + nom de domaine 1 an</li>
-        </ul>
-        <a href="#contact" class="sc-cta" aria-label="Demander un devis Essentiel à 490€">Je démarre avec l'Essentiel</a>
-        <p class="sc-note">Maintenance optionnelle : 29€/mois, sans engagement</p>
-      </div>
-
-      <!-- Pro -->
-      <div class="sc feat" data-r>
-        <span class="sc-badge">Recommandé</span>
-        <div class="sc-name">Pro + Présence Locale</div>
-        <p class="sc-tagline">Plusieurs pages, plus de visibilité, plus de chantiers.</p>
-        <div class="sc-price">
-          <span class="sc-amount">890€</span><span class="sc-ht"> HT · paiement en 2 fois</span>
-        </div>
-        <ul class="sc-features" aria-label="Ce qui est inclus dans le Pro">
-          <li>Tout l'Essentiel, plus :</li>
-          <li>Site multi-pages (Accueil, Services, Réalisations, Contact)</li>
-          <li>Fiche Google Business configurée et vérifiée</li>
-          <li>Collecte d'avis clients automatisée</li>
-          <li>Google Analytics intégré</li>
-          <li>SEO renforcé — mots-clés BTP Troyes/Aube</li>
-          <li>3 mois de maintenance offerts</li>
-          <li>3 cycles de retouches</li>
-        </ul>
-        <a href="#contact" class="sc-cta" aria-label="Demander un devis Pro à 890€">Je veux le Pro</a>
-        <p class="sc-note">Maintenance ensuite : 29€/mois, sans engagement</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ MODULES ═══ -->
-<section class="modules-section" id="modules" aria-labelledby="mod-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-label" data-r>Les modules</p>
-      <h2 class="sec-title" id="mod-title" data-r>Ajoutez ce dont vous avez besoin — rien de plus</h2>
-      <p class="sec-sub" data-r>Un plombier solo n'a pas les mêmes besoins qu'une entreprise de 5 maçons. Les modules s'ajoutent au socle une fois votre situation identifiée. Aucun n'est imposé.</p>
-    </div>
-    <div class="mc-list">
-
-      <div class="mc" data-r>
+    <div class="devis" data-devis>
+      <div class="devis-tete">
         <div>
-          <p class="mc-tag">Module Autonomie</p>
-          <p class="mc-pain">"Je dois rappeler mon prestataire pour changer un texte ou une photo ?"</p>
-          <h3>Modifiez votre site vous-même</h3>
-          <p>Depuis votre téléphone ou votre ordinateur, mettez à jour vos textes, photos de chantier et coordonnées — sans connaissance technique, sans jamais dépendre de moi.</p>
+          <p class="titre">Devis <span data-devis-nom>Essentiel</span></p>
+          <p class="legende">Prix hors taxes · TVA non applicable, art. 293 B du CGI</p>
         </div>
-        <div class="mc-price">
-          <span class="mc-amount">+190€</span>
-          <span class="mc-rec">une fois</span>
-        </div>
+        <dl>
+          <dt>Émetteur</dt><dd>ADOM Digital, Troyes</dd>
+          <dt>Client</dt><dd>Votre entreprise</dd>
+          <dt>Validité</dt><dd>30 jours</dd>
+        </dl>
       </div>
 
-      <div class="mc" data-r>
-        <div>
-          <p class="mc-tag">Module Relance Devis</p>
-          <p class="mc-pain">"J'envoie des devis, et plus rien — silence radio."</p>
-          <h3>Relancez automatiquement les devis sans réponse</h3>
-          <p>Si un devis reste sans réponse après quelques jours, un email partira automatiquement à votre prospect avec une offre limitée dans le temps. Vous récupérez des chantiers qui partaient à la concurrence.</p>
-        </div>
-        <div class="mc-price">
-          <span class="mc-amount">+150€</span>
-          <span class="mc-rec">+ 15€/mois</span>
-        </div>
+      <div class="choix-formule" role="group" aria-label="Choisir une formule">
+        <button type="button" data-formule="Pack Google" aria-pressed="false">Pack Google · 290 €</button>
+        <button type="button" data-formule="Essentiel" aria-pressed="true">Essentiel · 790 €</button>
+        <button type="button" data-formule="Pro" aria-pressed="false">Pro · 1 290 €</button>
       </div>
 
-      <div class="mc" data-r>
-        <div>
-          <p class="mc-tag">Module Espace Client</p>
-          <p class="mc-pain">"Mes clients m'appellent pour savoir où en est leur devis."</p>
-          <h3>Un espace client sécurisé sur votre site</h3>
-          <p>Chaque client accède à son espace pour suivre l'avancement de ses devis et commandes. L'espace se connecte à votre outil de facturation existant — pas de double saisie, pas de risque de non-conformité.</p>
-        </div>
-        <div class="mc-price">
-          <span class="mc-amount">+690€</span>
-          <span class="mc-rec">+ 39€/mois</span>
-        </div>
+      <table class="lignes">
+        <caption class="sr">Lignes incluses dans la formule choisie</caption>
+        <thead><tr><th scope="col">N°</th><th scope="col">Désignation</th><th scope="col" class="prix">Prix HT</th></tr></thead>
+        <tbody data-devis-lignes>
+            <tr><td class="num">01</td><td class="col-inclus"><strong>Pack Google complet</strong><span class="detail">Fiche, photos, QR code d'avis, 10 premiers avis.</span></td><td class="prix">inclus</td></tr>
+            <tr><td class="num">02</td><td class="col-inclus"><strong>Site d'une page, lisible sur téléphone</strong><span class="detail">Vos métiers, votre zone, vos chantiers, vos coordonnées.</span></td><td class="prix">inclus</td></tr>
+            <tr><td class="num">03</td><td class="col-inclus"><strong>Textes rédigés pour vous</strong><span class="detail">Après un entretien, vous relisez et vous validez.</span></td><td class="prix">inclus</td></tr>
+            <tr><td class="num">04</td><td class="col-inclus"><strong>Formulaire de demande de devis</strong><span class="detail">Les demandes arrivent directement dans votre boîte mail.</span></td><td class="prix">inclus</td></tr>
+            <tr><td class="num">05</td><td class="col-inclus"><strong>Référencement local</strong><span class="detail">Troyes et les communes où vous intervenez.</span></td><td class="prix">inclus</td></tr>
+            <tr><td class="num">06</td><td class="col-inclus"><strong>Pages légales</strong><span class="detail">Mentions légales, confidentialité, cookies.</span></td><td class="prix">inclus</td></tr>
+            <tr><td class="num">07</td><td class="col-inclus"><strong>1 cycle de retouches</strong><span class="detail">Une liste de corrections, traitée sous 3 jours ouvrés.</span></td><td class="prix">inclus</td></tr>
+        </tbody>
+      </table>
+
+      <div data-devis-options>
+        <table class="lignes">
+          <caption>Options, à ajouter si besoin</caption>
+          <tbody>
+            <tr class="ligne-option"><td class="num">+</td><td class="col-inclus"><label><input type="checkbox" data-option data-mensuel="39"> <span><strong>Suivi Chantiers</strong><span class="detail">Hébergement, 1 modification et 1 publication Google par mois, relance d'avis, bilan mensuel des appels. Sans engagement.</span></span></label></td><td class="prix">39 €/mois</td></tr>
+            <tr class="ligne-option"><td class="num">+</td><td class="col-inclus"><label><input type="checkbox" data-option data-prix="190"> <span><strong>Module Autonomie</strong><span class="detail">Vous modifiez vous-même vos textes et vos photos.</span></span></label></td><td class="prix">190 €</td></tr>
+            <tr class="ligne-option"><td class="num">+</td><td class="col-inclus"><strong>Module Assistant</strong><span class="detail">Votre site répond seul aux questions simples de vos clients : délais, zone, garanties, acompte.</span></td><td class="prix"><span class="a-completer">[À COMPLÉTER : prix]</span></td></tr>
+          </tbody>
+        </table>
       </div>
 
-    </div>
-    <p class="mc-note" data-r><strong>Comment ça marche ?</strong> On choisit le socle ensemble, puis on identifie quelle douleur mérite d'être résolue. Aucun module n'est imposé lors du devis.</p>
-  </div>
-</section>
-
-<!-- ═══ GARANTIE ═══ -->
-<section class="garantie-section" aria-labelledby="g-title">
-  <div class="wrap">
-    <div class="g-box" data-r>
-      <div>
-        <div class="g-icon" aria-hidden="true">🛡️</div>
-        <h2 id="g-title">Livraison garantie en 14 jours — ou vous ne devez rien.</h2>
-        <p>Si votre site n'est pas livré dans les 14 jours calendaires suivant la réception de vos contenus, le solde (70%) n'est pas dû. Pas de condition cachée, pas de petite ligne.</p>
+      <div class="total">
+        <div class="total-ligne"><span class="total-libelle">Total HT</span><span class="total-montant" data-devis-total>790 €</span></div>
+        <p class="total-mensuel" data-devis-mensuel hidden></p>
+        <p class="legende" data-devis-acompte>Acompte de 30 % à la commande (237 €), solde à la mise en ligne.</p>
       </div>
-      <div class="g-stats" aria-label="Conditions de la garantie">
-        <div class="g-row">
-          <div class="g-num">30%</div>
-          <div class="g-text">Acompte à la signature pour lancer le projet</div>
-        </div>
-        <div class="g-row">
-          <div class="g-num">70%</div>
-          <div class="g-text">Solde à la livraison — uniquement si le délai est tenu</div>
-        </div>
-        <div class="g-row">
-          <div class="g-num">14j</div>
-          <div class="g-text">Délai maximum à partir de la réception de vos contenus</div>
-        </div>
+      <p class="sr" aria-live="polite" data-devis-annonce></p>
+
+      <div class="devis-pied">
+        <p class="legende" data-devis-note>Mise en ligne en 14 jours après réception de votre dossier complet.</p>
+        <a class="btn" href="#contact" data-devis-commander>Demander ce devis</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ PROCESSUS ═══ -->
-<section class="processus-section" aria-labelledby="proc-title">
-  <div class="wrap">
-    <div class="sec-head center">
-      <p class="sec-label" data-r>Comment ça se passe</p>
-      <h2 class="sec-title" id="proc-title" data-r>De zéro à en ligne en 14 jours</h2>
-      <p class="sec-sub" data-r>Un processus simple, pensé pour les artisans qui n'ont pas de temps à perdre.</p>
+<section class="section" aria-labelledby="titre-regle">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">02 · Ce que ça règle</span>
+      <h2 id="titre-regle">Moins d'appels pour rien. Plus de demandes sérieuses.</h2>
     </div>
-    <div class="process-grid" role="list">
-      <div class="ps" data-r role="listitem">
-        <div class="ps-num" aria-hidden="true">1</div>
-        <h3>Échange découverte</h3>
-        <p>15 minutes pour comprendre votre activité, votre zone et vos objectifs. Gratuit, sans engagement.</p>
+    <ol class="regle">
+      <li><span class="num">01</span><h3>« On ne vous trouve pas sur Google. »</h3><p>Fiche Google complète et site référencé sur votre ville et les communes où vous travaillez.</p></li>
+      <li><span class="num">02</span><h3>« Les clients demandent des avis. »</h3><p>Un QR code d'avis sur vos devis et votre camion, et je sollicite avec vous vos 10 premiers avis.</p></li>
+      <li><span class="num">03</span><h3>« Je n'ai pas le temps d'écrire. »</h3><p>Une heure d'entretien, et j'écris tous les textes. Vous relisez, vous validez.</p></li>
+      <li><span class="num">04</span><h3>« On m'appelle juste pour un prix. »</h3><p>L'estimateur donne une fourchette calculée avec vos tarifs. Le client vous appelle en connaissant l'ordre de prix.</p></li>
+      <li><span class="num">05</span><h3>« Toujours les mêmes questions. »</h3><p>L'assistant répond seul aux questions simples : délais, zone, garanties, acompte. Vous gardez le téléphone pour les chantiers.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section sombre" id="demo" aria-labelledby="titre-demo">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">03 · Démonstration</span>
+      <h2 id="titre-demo">Testez-le comme le ferait votre client.</h2>
+      <p class="chapo">Voici le site d'un maçon fictif, « Maçonnerie Exemple ». Estimez un chantier, posez une question : c'est ce que vos clients feront sur votre site, sans vous appeler.</p>
+    </div>
+    <div class="demo-grille">
+      <div class="demo-cadre">
+        <div class="demo-cadre-tete"><span>Estimateur de prix</span><span class="etiquette-demo">Démo · prix fictifs</span></div>
+        <div class="demo-cadre-corps" data-estimateur data-source="/demo/macon/grille.json" data-cible-devis="/demo/macon/#devis"><p>Chargement de l'estimateur…</p></div>
       </div>
-      <div class="ps" data-r role="listitem">
-        <div class="ps-num" aria-hidden="true">2</div>
-        <h3>Création du site</h3>
-        <p>Je crée votre site sur mesure. Vous fournissez textes et photos — je m'occupe du reste.</p>
+      <div class="demo-cadre">
+        <div class="demo-cadre-tete"><span>Questions des clients</span><span class="etiquette-demo">Démo</span></div>
+        <div class="demo-cadre-corps" data-assistant data-source="/demo/macon/faq-assistant.json" data-cible-devis="/demo/macon/#devis"><p>Chargement de l'assistant…</p></div>
       </div>
-      <div class="ps" data-r role="listitem">
-        <div class="ps-num" aria-hidden="true">3</div>
-        <h3>Validation ensemble</h3>
-        <p>Vous relisez, vous demandez vos retouches. On valide ensemble avant la mise en ligne.</p>
+    </div>
+    <p class="actions"><a class="btn" href="/demo/macon/">Voir le site démo complet</a></p>
+  </div>
+</section>
+
+<section class="section" id="garantie" aria-labelledby="titre-garantie">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">04 · Engagements</span>
+      <h2 id="titre-garantie">Deux engagements écrits dans le contrat.</h2>
+    </div>
+    <div class="engagements">
+      <div class="engagement">
+        <h3>Garantie de délai</h3>
+        <div class="cote" role="img" aria-label="14 jours">
+          <span class="cote-ligne"></span><span class="cote-valeur">14 jours</span><span class="cote-ligne"></span>
+        </div>
+        <p>Votre site est en ligne 14 jours après la réception de votre dossier complet. Si je ne tiens pas ce délai, vous ne payez pas le <span class="surligne">solde de 70 %</span>, et vous gardez le site.</p>
       </div>
-      <div class="ps" data-r role="listitem">
-        <div class="ps-num" aria-hidden="true">4</div>
-        <h3>Mise en ligne</h3>
-        <p>Votre site est en ligne. Je vous explique comment l'utiliser. Vous récupérez les clés.</p>
+      <div class="engagement">
+        <h3>Propriété</h3>
+        <div class="cote" role="img" aria-label="Sans engagement">
+          <span class="cote-ligne"></span><span class="cote-valeur">sans engagement</span><span class="cote-ligne"></span>
+        </div>
+        <p>Une fois payé, le site est à vous. Le nom de domaine est à votre nom. Le Suivi Chantiers s'arrête quand vous voulez, et votre site reste en ligne.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ RÉALISATION ═══ -->
-<section class="real-section" id="realisation" aria-labelledby="real-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-label" data-r>Réalisation</p>
-      <h2 class="sec-title" id="real-title" data-r>A.S Maçonnerie — de l'invisible à la première page Google</h2>
+<section class="section blanc" id="realisations" aria-labelledby="titre-real">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">05 · Réalisations</span>
+      <h2 id="titre-real">5 places de lancement sont ouvertes.</h2>
+      <p class="chapo">ADOM Digital démarre. Plutôt que de faux exemples, voici des places : les 5 premiers artisans qui me font confiance verront leur site ici, avec leur accord.</p>
     </div>
-    <div class="case-study" data-r>
-      <div class="case-img">
-        <img
-          src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=75&auto=format&fit=crop"
-          alt="Site vitrine d'A.S Maçonnerie affiché sur smartphone"
-          width="450" height="360"
-          loading="lazy"
-        >
-      </div>
-      <div>
-        <p class="case-meta">Maçon indépendant · Troyes (10)</p>
-        <h3>Situation de départ</h3>
-        <p class="case-intro">Aucun site, aucune présence en ligne. A.S perdait des demandes de chantier face à des concurrents mieux référencés, même moins expérimentés.</p>
-        <div class="kpis" aria-label="Résultats obtenus">
-          <div class="kpi">
-            <div class="kpi-val">Top 3</div>
-            <div class="kpi-label">Google "maçon Troyes"</div>
-          </div>
-          <div class="kpi">
-            <div class="kpi-val">+4</div>
-            <div class="kpi-label">Demandes/mois via le site</div>
-          </div>
-          <div class="kpi">
-            <div class="kpi-val">12j</div>
-            <div class="kpi-label">Livré en</div>
-          </div>
-        </div>
-        <blockquote class="case-quote">
-          "En moins de deux semaines j'avais un site que j'aurais pas cru pouvoir avoir. Depuis, j'ai des demandes qui rentrent sans que je fasse quoi que ce soit."
-          <cite>— A.S, maçon indépendant, Troyes</cite>
-        </blockquote>
-      </div>
+    <div class="chantiers">
+      <div class="chantier"><strong>Maçonnerie Exemple</strong><p>Site de démonstration, entreprise fictive.</p><a href="/demo/macon/">Voir la démo</a></div>
+      <div class="chantier"><strong>Votre entreprise ?</strong><p>Place n° 1 sur 5.</p><a href="/audit/">Commencer par l'audit gratuit</a></div>
+      <div class="chantier"><strong>Votre entreprise ?</strong><p>Place n° 2 sur 5.</p><a href="/audit/">Commencer par l'audit gratuit</a></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ TÉMOIGNAGES ═══ -->
-<section class="temo-section" aria-labelledby="temo-title">
-  <div class="wrap">
-    <div class="sec-head center">
-      <p class="sec-label" data-r>Témoignages</p>
-      <h2 class="sec-title" id="temo-title" data-r>Ce qu'en disent les artisans</h2>
-    </div>
-    <div class="temo-grid">
-      <div class="temo-card" data-r>
-        <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-        <p class="temo-text">"J'avais essayé de faire mon site moi-même. Résultat : des heures perdues et un rendu amateur. Aimerick l'a fait en 10 jours, proprement, et j'ai décroché un chantier via le site le mois suivant."</p>
-        <div class="temo-author">
-          <div class="temo-av" aria-hidden="true">ML</div>
-          <div>
-            <div class="temo-name">M. Laurent</div>
-            <div class="temo-job">Électricien indépendant, Troyes</div>
-          </div>
-        </div>
-      </div>
-      <div class="temo-card" data-r>
-        <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-        <p class="temo-text">"Ce qui m'a convaincu c'est la garantie 14 jours. Si c'est pas livré, je dois pas le solde. Ça change tout quand on se méfie des prestataires web."</p>
-        <div class="temo-author">
-          <div class="temo-av" aria-hidden="true">RB</div>
-          <div>
-            <div class="temo-name">R. Bernard</div>
-            <div class="temo-job">Plombier-chauffagiste, Aube (10)</div>
-          </div>
-        </div>
-      </div>
-      <div class="temo-card" data-r>
-        <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-        <p class="temo-text">"On a ajouté le module autonomie pour que je mette mes photos de chantier moi-même. Depuis mon téléphone en 2 minutes. Mes clients voient mes derniers travaux en temps réel."</p>
-        <div class="temo-author">
-          <div class="temo-av" aria-hidden="true">KM</div>
-          <div>
-            <div class="temo-name">K. Martin</div>
-            <div class="temo-job">Peintre en bâtiment, Troyes</div>
-          </div>
-        </div>
-      </div>
+<section class="section" id="qui" aria-labelledby="titre-qui">
+  <div class="conteneur presentation">
+    <div class="photo-vide"><span class="a-completer">[À COMPLÉTER : photo portrait, format 4:5]</span></div>
+    <div>
+      <span class="ref">06 · Qui je suis</span>
+      <h2 id="titre-qui">Aimerick, à Troyes.</h2>
+      <p class="chapo">Je travaille dans le négoce de matériaux à Troyes. Chaque semaine, je prépare des devis pour des artisans du bâtiment de l'Aube. Je connais vos métiers, vos délais et la façon dont vos clients choisissent.</p>
+      <p>J'ai créé ADOM Digital pour une raison simple : beaucoup d'excellents artisans de l'Aube sont introuvables sur internet, et perdent des chantiers simplement parce qu'on ne les trouve pas. Je vous rencontre en personne, j'écris vos textes et je m'engage sur un délai.</p>
+      <p><span class="a-completer">[À COMPLÉTER : années d'expérience, parcours, une phrase personnelle]</span></p>
     </div>
   </div>
 </section>
 
-<!-- ═══ FAQ ═══ -->
-<section class="faq-section" id="faq" aria-labelledby="faq-title">
-  <div class="wrap">
-    <div class="sec-head center">
-      <p class="sec-label" data-r>FAQ</p>
-      <h2 class="sec-title" id="faq-title" data-r>Les questions qu'on me pose souvent</h2>
+<section class="section blanc" id="faq" aria-labelledby="titre-faq">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">07 · Questions</span>
+      <h2 id="titre-faq">Les questions qu'on me pose.</h2>
     </div>
-    <div class="faq-list">
-
-      <details data-r>
-        <summary>Pourquoi les modules ne sont-ils pas inclus d'office ?
-          <svg class="faq-chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="faq-body">Parce qu'un plombier solo n'a pas les mêmes besoins qu'une entreprise de maçonnerie de 5 personnes. Si vous n'envoyez pas de devis en ligne, le Module Relance ne vous sert à rien — ce serait vous vendre quelque chose d'inutile. On parle de votre situation avant de recommander quoi que ce soit.</div>
-      </details>
-
-      <details data-r>
-        <summary>Que se passe-t-il si le délai de 14 jours n'est pas tenu ?
-          <svg class="faq-chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="faq-body">Le solde (70% du montant total) n'est pas dû. Vous ne perdez que l'acompte de démarrage (30%). Ce délai commence le jour où je reçois vos contenus — textes, photos, logo — pas à la signature du devis.</div>
-      </details>
-
-      <details data-r>
-        <summary>Je n'ai pas de photos ni de textes prêts. C'est un problème ?
-          <svg class="faq-chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="faq-body">Non. Je vous guide pour rassembler ce qu'il faut. Pour les textes, je peux en rédiger à partir de notre échange. Pour les photos, des clichés pris avec votre téléphone sur un chantier récent suffisent amplement.</div>
-      </details>
-
-      <details data-r>
-        <summary>Puis-je commencer avec l'Essentiel et ajouter des modules plus tard ?
-          <svg class="faq-chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="faq-body">Oui. Le socle Essentiel est conçu pour ça. Si dans 6 mois vous voulez ajouter le Module Autonomie ou le Module Relance Devis, c'est possible sans refaire le site de zéro.</div>
-      </details>
-
-      <details data-r>
-        <summary>Vous travaillez uniquement sur Troyes ?
-          <svg class="faq-chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="faq-body">Je suis basé à Troyes et je travaille principalement avec des artisans de l'Aube (10) et des départements limitrophes. Tout se fait à distance — visio, téléphone, email. Je me déplace aussi sur Troyes pour un premier échange si vous préférez.</div>
-      </details>
-
-      <details data-r>
-        <summary>Le Module Espace Client remplace-t-il mon logiciel de facturation ?
-          <svg class="faq-chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="faq-body">Non, et c'est voulu. La réglementation impose d'utiliser un logiciel de facturation certifié. L'Espace Client affiche le statut des devis et renvoie vers votre outil existant. Pas de double saisie, pas de risque de non-conformité.</div>
-      </details>
-
+    <div class="faq">
+    <details>
+      <summary>Combien coûte un site internet pour un artisan ?</summary>
+      <div class="reponse"><p>Le site Essentiel coûte 790 € HT : un site d'une page, votre fiche Google complète et vos textes rédigés. Le site Pro coûte 1 290 € HT : jusqu'à 5 pages, un estimateur de prix et 3 mois de Suivi offerts. TVA non applicable. Aucun abonnement n'est obligatoire.</p></div>
+    </details>
+    <details>
+      <summary>En combien de temps mon site est-il en ligne ?</summary>
+      <div class="reponse"><p>En 14 jours après réception de votre dossier complet. Si ce délai n'est pas tenu de mon fait, vous ne payez pas le solde de 70 %, et vous gardez le site.</p></div>
+    </details>
+    <details>
+      <summary>Le site m'appartient-il ?</summary>
+      <div class="reponse"><p>Oui. Une fois le site payé, il est à vous. Le nom de domaine est enregistré à votre nom, et je vous remets les fichiers du site sur simple demande.</p></div>
+    </details>
+    <details>
+      <summary>Puis-je arrêter le Suivi Chantiers quand je veux ?</summary>
+      <div class="reponse"><p>Oui. Le Suivi est sans engagement : vous l'arrêtez par email, avec un préavis d'un mois. Votre site reste en ligne et reste à vous.</p></div>
+    </details>
+    <details>
+      <summary>Qu'est-ce que je dois fournir ?</summary>
+      <div class="reponse"><p>Les informations légales de votre entreprise, votre logo si vous en avez un, l'accès à votre nom de domaine et à votre fiche Google, et une heure d'entretien pour les textes. Les photos de chantier, je peux les prendre sur place.</p></div>
+    </details>
+    <details>
+      <summary>Pourquoi commencer par la fiche Google ?</summary>
+      <div class="reponse"><p>Quand un particulier cherche « maçon Troyes », Google affiche souvent les fiches avec la carte, les avis et le bouton d'appel avant les sites. Une fiche complète et bien notée vous fait appeler, avec ou sans site.</p></div>
+    </details>
+    <details>
+      <summary>À quoi sert l'estimateur de prix ?</summary>
+      <div class="reponse"><p>Votre client indique ses travaux et ses mesures, et il voit une fourchette calculée avec vos tarifs. Il vous appelle en connaissant l'ordre de prix. Ce n'est jamais un prix ferme : le devis après visite reste le seul engagement.</p></div>
+    </details>
+    <details>
+      <summary>Vous vous déplacez ?</summary>
+      <div class="reponse"><p>Oui, partout dans l'Aube. Le premier rendez-vous se fait sur votre chantier, à votre bureau ou par téléphone, comme vous préférez.</p></div>
+    </details>
     </div>
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
-<section class="contact-section" id="contact" aria-labelledby="contact-title">
-  <div class="wrap">
-    <div class="contact-grid">
-
-      <div class="contact-info" data-r>
-        <h2 id="contact-title">Parlez-moi de votre projet.<br>Je vous réponds sous 24h.</h2>
-        <p class="ci-sub">Remplissez le formulaire — je reviens vers vous avec un devis adapté à votre activité et votre zone. Pas de template, pas de prix catalogue imposé.</p>
-        <div class="ci-promises">
-          <div class="ci-row"><span class="ci-icon" aria-hidden="true">✓</span> Devis personnalisé gratuit sous 24h</div>
-          <div class="ci-row"><span class="ci-icon" aria-hidden="true">✓</span> Appel découverte 15 min offert si besoin</div>
-          <div class="ci-row"><span class="ci-icon" aria-hidden="true">✓</span> Aucun engagement avant signature</div>
-          <div class="ci-row"><span class="ci-icon" aria-hidden="true">✓</span> Garantie livraison 14 jours</div>
-        </div>
+<section class="section sombre" id="contact" aria-labelledby="titre-contact">
+  <div class="conteneur">
+    <div class="section-entete">
+      <span class="ref">08 · Contact</span>
+      <h2 id="titre-contact">Parlons de votre entreprise.</h2>
+      <p class="chapo">Réponse sous 24 heures ouvrées. Vous préférez commencer par un état des lieux ? <a href="/audit/">Demandez l'audit gratuit de votre fiche Google.</a></p>
+    </div>
+    <div class="demo-deux">
+    <div>
+      <ul class="hero-preuves">
+        <li>Téléphone : <span class="a-completer">[À COMPLÉTER : téléphone]</span></li>
+        <li>Email : <span class="a-completer">[À COMPLÉTER : email]</span></li>
+        <li>Rendez-vous sur votre chantier, à votre bureau ou par téléphone, partout dans l'Aube.</li>
+        <li>Vos informations servent uniquement à vous répondre.</li>
+      </ul>
+    </div>
+    <form class="formulaire" data-formulaire="contact" data-merci="Merci, votre demande est bien partie. Je vous rappelle sous 24 heures ouvrées.">
+      <div class="champs-2">
+        <div class="champ"><label for="contact-entreprise">Entreprise</label><input id="contact-entreprise" name="entreprise" type="text" autocomplete="organization" maxlength="80" required></div>
+        <div class="champ"><label for="contact-nom">Votre nom</label><input id="contact-nom" name="nom" type="text" autocomplete="name" maxlength="60" required></div>
       </div>
-
-      <div class="cf-wrap" data-r>
-        <form id="cform" novalidate aria-label="Formulaire de demande de devis">
-          <!-- Honeypots -->
-          <div aria-hidden="true">
-            <input type="text" name="website" id="hp1" class="hp-field" tabindex="-1" autocomplete="off">
-            <input type="text" name="company" id="hp2" class="hp-field" tabindex="-1" autocomplete="off">
-          </div>
-
-          <div class="form-row">
-            <div class="fg">
-              <label for="prenom">Prénom <span aria-hidden="true">*</span></label>
-              <input type="text" id="prenom" name="prenom" placeholder="Marc" required autocomplete="given-name" aria-required="true" aria-describedby="prenom-e">
-              <span class="fe" id="prenom-e" role="alert"></span>
-            </div>
-            <div class="fg">
-              <label for="telephone">Téléphone <span aria-hidden="true">*</span></label>
-              <input type="tel" id="telephone" name="telephone" placeholder="06 xx xx xx xx" required autocomplete="tel" aria-required="true" aria-describedby="tel-e">
-              <span class="fe" id="tel-e" role="alert"></span>
-            </div>
-          </div>
-
-          <div class="fg">
-            <label for="email">Email <span aria-hidden="true">*</span></label>
-            <input type="email" id="email" name="email" placeholder="marc@example.com" required autocomplete="email" aria-required="true" aria-describedby="email-e">
-            <span class="fe" id="email-e" role="alert"></span>
-          </div>
-
-          <div class="form-row">
-            <div class="fg">
-              <label for="ville">Ville <span aria-hidden="true">*</span></label>
-              <input type="text" id="ville" name="ville" placeholder="Troyes" required autocomplete="address-level2" aria-required="true" aria-describedby="ville-e">
-              <span class="fe" id="ville-e" role="alert"></span>
-            </div>
-            <div class="fg">
-              <label for="metier">Votre métier <span aria-hidden="true">*</span></label>
-              <select id="metier" name="metier" required aria-required="true" aria-describedby="metier-e">
-                <option value="" disabled selected>Choisir…</option>
-                <option value="macon">Maçon</option>
-                <option value="plombier">Plombier / Chauffagiste</option>
-                <option value="electricien">Électricien</option>
-                <option value="peintre">Peintre en bâtiment</option>
-                <option value="charpentier">Charpentier / Couvreur</option>
-                <option value="menuisier">Menuisier / Serrurier</option>
-                <option value="carreleur">Carreleur</option>
-                <option value="platrier">Plâtrier / Plaquiste</option>
-                <option value="autre">Autre BTP</option>
-              </select>
-              <span class="fe" id="metier-e" role="alert"></span>
-            </div>
-          </div>
-
-          <div class="fg">
-            <label for="site_existant">Avez-vous déjà un site ? <span aria-hidden="true">*</span></label>
-            <select id="site_existant" name="site_existant" required aria-required="true" aria-describedby="site-e">
-              <option value="" disabled selected>Choisir…</option>
-              <option value="non">Non, c'est mon premier site</option>
-              <option value="oui_refonte">Oui, je veux le refaire</option>
-              <option value="oui_ok">Oui, je cherche autre chose</option>
-            </select>
-            <span class="fe" id="site-e" role="alert"></span>
-          </div>
-
-          <div class="fg">
-            <label for="formule">Formule envisagée</label>
-            <select id="formule" name="formule">
-              <option value="">Je ne sais pas encore</option>
-              <option value="essentiel">Essentiel — 490€</option>
-              <option value="pro">Pro + Présence Locale — 890€</option>
-            </select>
-          </div>
-
-          <div class="fg">
-            <label for="message">Votre projet en quelques mots</label>
-            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre activité, votre zone d'intervention, vos attentes…"></textarea>
-          </div>
-
-          <button type="submit" class="form-submit" id="fsub">Envoyer ma demande — réponse sous 24h</button>
-          <div class="form-err" id="ferr" role="alert" aria-live="polite"></div>
-        </form>
-
-        <div class="form-ok" id="form-ok" aria-live="polite">
-          <div class="form-ok-icon" aria-hidden="true">✅</div>
-          <h3>Demande envoyée !</h3>
-          <p>Je vous réponds sous 24h avec un devis personnalisé. En attendant, <a href="https://calendly.com/adom-digital/15min" target="_blank" rel="noopener noreferrer">réservez un appel découverte de 15 min</a> si vous préférez échanger directement.</p>
-        </div>
+      <div class="champs-2">
+        <div class="champ"><label for="contact-metier">Métier</label>
+          <select id="contact-metier" name="metier" required>
+          <option value="">Choisir…</option>
+          <option value="Maçon">Maçon</option>
+          <option value="Couvreur">Couvreur</option>
+          <option value="Charpentier">Charpentier</option>
+          <option value="Plombier">Plombier</option>
+          <option value="Chauffagiste">Chauffagiste</option>
+          <option value="Électricien">Électricien</option>
+          <option value="Menuisier">Menuisier</option>
+          <option value="Carreleur">Carreleur</option>
+          <option value="Peintre">Peintre</option>
+          <option value="Plaquiste">Plaquiste</option>
+          <option value="Terrassier">Terrassier</option>
+          <option value="Paysagiste">Paysagiste</option>
+          <option value="Autre métier du bâtiment">Autre métier du bâtiment</option>
+          </select></div>
+        <div class="champ"><label for="contact-commune">Commune</label><input id="contact-commune" name="commune" type="text" autocomplete="address-level2" maxlength="60" required></div>
       </div>
-
+      <div class="champs-2">
+        <div class="champ"><label for="contact-telephone">Téléphone</label><input id="contact-telephone" name="telephone" type="tel" autocomplete="tel" maxlength="20" pattern="[\d\s\+\(\)\.\-]{10,20}" data-erreur="Numéro de téléphone invalide (10 chiffres)." required></div>
+        <div class="champ"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="100" required></div>
+      </div>
+      <div class="champ"><label for="contact-formule">Formule envisagée <span class="aide">(facultatif)</span></label>
+        <select id="contact-formule" name="formule">
+          <option value="">Pas encore d'idée</option>
+          <option value="Pack Google">Pack Google · 290 € HT</option>
+          <option value="Essentiel">Essentiel · 790 € HT</option>
+          <option value="Pro">Pro · 1 290 € HT</option>
+          <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+        </select></div>
+      <div class="champ"><label for="contact-message">Message <span class="aide">(facultatif)</span></label><textarea id="contact-message" name="message" maxlength="1000"></textarea></div>
+      <div class="piege" aria-hidden="true"><label for="contact-piege">Ne pas remplir</label><input id="contact-piege" name="_piege" type="text" tabindex="-1" autocomplete="off"></div>
+      <label class="consentement" for="contact-consentement"><input id="contact-consentement" name="consentement" type="checkbox" value="oui" required> <span>J'accepte que mes informations servent uniquement à me recontacter au sujet de ma demande. <a href="/confidentialite/">Politique de confidentialité</a></span></label>
+      <button type="submit" class="btn">Envoyer ma demande</button>
+      <p class="statut" role="status" aria-live="polite"></p>
+    </form>
     </div>
   </div>
 </section>
 
 </main>
-
-<!-- ═══ FOOTER ═══ -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo">ADOM<span style="color:var(--t)">.</span></div>
-      <p>Création de sites vitrine pour artisans et pros du BTP à Troyes et dans l'Aube (10). Spécialiste, pas généraliste.</p>
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied-grille">
+      <div>
+        <a class="logo" href="/" aria-label="ADOM Digital, accueil"><span class="logo-mot">ADOM</span><span class="logo-cote" aria-hidden="true"></span></a>
+        <p>Sites internet et fiches Google pour les artisans du bâtiment de l'Aube.<br>Troyes (10).</p>
+        <p>Téléphone : <span class="a-completer">[À COMPLÉTER : téléphone]</span><br>Email : <span class="a-completer">[À COMPLÉTER : email]</span></p>
+      </div>
+      <div>
+        <h2 class="ref">Le site</h2>
+        <ul>
+          <li><a href="/#devis">Tarifs</a></li>
+          <li><a href="/demo/macon/">Site de démonstration</a></li>
+          <li><a href="/audit/">Audit gratuit de fiche Google</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="ref">Informations</h2>
+        <ul>
+          <li><a href="/mentions-legales/">Mentions légales</a></li>
+          <li><a href="/confidentialite/">Confidentialité</a></li>
+          <li><a href="/cookies/">Cookies</a></li>
+          <li><a href="/cgv/">Conditions générales de vente</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Offre</h4>
-      <ul>
-        <li><a href="#socle">Essentiel — 490€</a></li>
-        <li><a href="#socle">Pro — 890€</a></li>
-        <li><a href="#modules">Les modules</a></li>
-        <li><a href="#contact">Devis gratuit</a></li>
-      </ul>
+    <div class="pied-bas">
+      <span>© <span data-annee>2026</span> ADOM Digital · Aimerick Domingues, entrepreneur individuel · TVA non applicable, art. 293 B du CGI</span>
+      <button type="button" data-cookies-ouvrir>Gérer les cookies</button>
     </div>
-    <div class="footer-col">
-      <h4>Informations</h4>
-      <ul>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#modal-legal">Mentions légales</a></li>
-        <li><a href="#modal-privacy">Confidentialité</a></li>
-        <li><a href="#modal-cookies">Politique cookies</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 ADOM Digital — Aimerick Domingues, EI · Non soumis à TVA (Art. 293B CGI)</p>
-    <p>
-      <a href="#modal-legal">Mentions légales</a> ·
-      <a href="#modal-privacy">Confidentialité</a> ·
-      <a href="https://calendly.com/adom-digital/15min" target="_blank" rel="noopener noreferrer">Prendre RDV</a>
-    </p>
   </div>
 </footer>
-
-<!-- ═══ MODALS ═══ -->
-<div class="modal-ov" id="modal-legal" role="dialog" aria-modal="true" aria-label="Mentions légales">
-  <div class="modal-box">
-    <button class="modal-close" data-close="modal-legal" aria-label="Fermer">✕</button>
-    <h2>Mentions légales</h2>
-    <h3>Éditeur du site</h3>
-    <p>Aimerick Domingues — Entrepreneur Individuel (EI)<br>
-    SIREN : [SIREN à compléter]<br>
-    Adresse : 24 rue de la Mission, 10000 Troyes<br>
-    Téléphone : 06 46 64 20 32<br>
-    Email : aimerickdomingues6@gmail.com<br>
-    Non soumis à TVA — Art. 293B du CGI</p>
-    <h3>Hébergement</h3>
-    <p>Netlify, Inc. — 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA</p>
-    <h3>Propriété intellectuelle</h3>
-    <p>L'ensemble des contenus de ce site (textes, images, code) est protégé par le droit d'auteur. Toute reproduction sans autorisation est interdite.</p>
-    <h3>Médiation</h3>
-    <p>En cas de litige non résolu, vous pouvez recourir à la médiation de la consommation : <a href="https://cnpm-mediation-consommation.eu" target="_blank" rel="noopener noreferrer">cnpm-mediation-consommation.eu</a></p>
-  </div>
-</div>
-
-<div class="modal-ov" id="modal-privacy" role="dialog" aria-modal="true" aria-label="Politique de confidentialité">
-  <div class="modal-box">
-    <button class="modal-close" data-close="modal-privacy" aria-label="Fermer">✕</button>
-    <h2>Politique de confidentialité</h2>
-    <h3>Responsable du traitement</h3>
-    <p>Aimerick Domingues, EI — aimerickdomingues6@gmail.com</p>
-    <h3>Données collectées</h3>
-    <p>Via le formulaire de contact : prénom, email, téléphone, ville, métier. Ces données servent uniquement à vous recontacter avec un devis personnalisé.</p>
-    <h3>Base légale</h3>
-    <p>Intérêt légitime (demande de devis entrante) et consentement explicite pour les communications marketing éventuelles.</p>
-    <h3>Conservation</h3>
-    <p>Vos données sont conservées 3 ans après le dernier contact, puis supprimées.</p>
-    <h3>Vos droits</h3>
-    <p>Accès, rectification, suppression, opposition, portabilité. Demande à adresser à : aimerickdomingues6@gmail.com. En cas de désaccord : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">cnil.fr</a></p>
-    <h3>Sous-traitants</h3>
-    <p>EmailJS (envoi des emails de contact), Netlify (hébergement). Ces prestataires ne revendent pas vos données et sont contractuellement liés à la protection de vos informations.</p>
-  </div>
-</div>
-
-<div class="modal-ov" id="modal-cookies" role="dialog" aria-modal="true" aria-label="Politique des cookies">
-  <div class="modal-box">
-    <button class="modal-close" data-close="modal-cookies" aria-label="Fermer">✕</button>
-    <h2>Politique des cookies</h2>
-    <h3>Cookies nécessaires</h3>
-    <p>Mémorisation de votre choix cookies. Durée : 1 an. Base légale : intérêt légitime.</p>
-    <h3>Google Fonts</h3>
-    <p>Chargement des polices de caractères. Peut transmettre votre adresse IP à Google. Activé uniquement avec votre consentement.</p>
-    <h3>Google Analytics</h3>
-    <p>Mesure d'audience anonyme (pages vues, durée de session). Aucune donnée personnelle identifiable. Activé uniquement avec votre consentement.</p>
-    <h3>Gérer vos choix</h3>
-    <p>Vous pouvez modifier vos préférences à tout moment via le bandeau cookies ou en effaçant les données de navigation de votre navigateur.</p>
-    <p style="margin-top:10px">Autorité de référence : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a></p>
-  </div>
-</div>
-
-<!-- ═══ SCRIPTS ═══ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const touch = () => window.matchMedia('(pointer:coarse)').matches;
-  const reduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-
-  /* ── CURSOR ── */
-  if (!touch()) {
-    const ring = document.getElementById('cur-ring');
-    const dot  = document.getElementById('cur-dot');
-    let rx = 0, ry = 0, mx = 0, my = 0;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
-    document.addEventListener('mouseleave', () => { ring.classList.add('gone'); dot.classList.add('gone'); });
-    document.addEventListener('mouseenter', () => { ring.classList.remove('gone'); dot.classList.remove('gone'); });
-    document.querySelectorAll('a,button,summary,[tabindex="0"]').forEach(el => {
-      el.addEventListener('mouseenter', () => ring.classList.add('big'));
-      el.addEventListener('mouseleave', () => ring.classList.remove('big'));
-    });
-    (function animRing() {
-      rx += (mx - rx) * 0.07; ry += (my - ry) * 0.07;
-      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-      requestAnimationFrame(animRing);
-    })();
-  }
-
-  /* ── PROGRESS + NAV + STICKY CTA ── */
-  const rprog = document.getElementById('rprog');
-  const nav   = document.getElementById('nav');
-  const scta  = document.getElementById('sticky-cta');
-  const cSec  = document.getElementById('contact');
-  window.addEventListener('scroll', () => {
-    const s = window.scrollY;
-    const h = document.body.scrollHeight - window.innerHeight;
-    rprog.style.transform = 'scaleX(' + (h > 0 ? s / h : 0) + ')';
-    nav.classList.toggle('scrolled', s > 50);
-    if (scta) {
-      const show = s > 300 && cSec.getBoundingClientRect().top > window.innerHeight;
-      scta.classList.toggle('show', show);
-      scta.setAttribute('aria-hidden', String(!show));
-    }
-  }, { passive: true });
-
-  /* ── BURGER ── */
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('nav-links');
-  burger.addEventListener('click', () => {
-    const open = burger.classList.toggle('open');
-    navLinks.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', String(open));
-  });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    burger.classList.remove('open');
-    navLinks.classList.remove('open');
-    burger.setAttribute('aria-expanded', 'false');
-  }));
-
-  /* ── GSAP ── */
-  window.addEventListener('load', () => {
-    if (typeof gsap === 'undefined') {
-      document.querySelectorAll('[data-r]').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
-      return;
-    }
-    gsap.registerPlugin(ScrollTrigger);
-
-    if (reduced) {
-      document.querySelectorAll('[data-r]').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
-    } else {
-      // Hero stagger
-      const heroEls = [...document.querySelectorAll('.hero [data-r]')];
-      if (heroEls.length) {
-        gsap.fromTo(heroEls,
-          { opacity: 0, y: 28 },
-          { opacity: 1, y: 0, duration: .8, stagger: .13, ease: 'power2.out', delay: .25,
-            onComplete: () => heroEls.forEach(el => { el.style.opacity = ''; el.style.transform = ''; }) }
-        );
-      }
-
-      // Scroll reveals (everything except hero)
-      document.querySelectorAll('[data-r]:not(.hero [data-r])').forEach(el => {
-        gsap.fromTo(el,
-          { opacity: 0, y: 22 },
-          { opacity: 1, y: 0, duration: .7, ease: 'power2.out',
-            scrollTrigger: { trigger: el, start: 'top 88%', once: true } }
-        );
-      });
-
-      // Counters
-      document.querySelectorAll('[data-c]').forEach(el => {
-        const target = parseInt(el.dataset.c, 10);
-        ScrollTrigger.create({
-          trigger: el, start: 'top 86%', once: true,
-          onEnter: () => {
-            const obj = { val: 0 };
-            gsap.to(obj, { val: target, duration: 1.6, ease: 'power2.out', onUpdate: () => { el.textContent = Math.round(obj.val); } });
-          }
-        });
-      });
-
-      // Magnetic hover (desktop)
-      if (!touch()) {
-        document.querySelectorAll('.pb-card,.sc,.temo-card,.mc').forEach(card => {
-          card.addEventListener('mousemove', e => {
-            const r = card.getBoundingClientRect();
-            const x = ((e.clientX - r.left) / r.width  - .5) * 2;
-            const y = ((e.clientY - r.top)  / r.height - .5) * 2;
-            gsap.to(card, { x: x * 7, y: y * 5, duration: .4, ease: 'power2.out' });
-          });
-          card.addEventListener('mouseleave', () => gsap.to(card, { x: 0, y: 0, duration: .6, ease: 'elastic.out(1,.5)' }));
-        });
-      }
-    }
-  });
-
-  /* ── FAQ ── */
-  document.querySelectorAll('details').forEach(d => {
-    d.addEventListener('toggle', () => {
-      if (d.open) {
-        document.querySelectorAll('details[open]').forEach(other => { if (other !== d) other.removeAttribute('open'); });
-      }
-    });
-  });
-
-  /* ── COOKIES ── */
-  const banner = document.getElementById('cookie-b');
-  const stored = localStorage.getItem('adom_ck');
-  if (!stored) {
-    setTimeout(() => banner.classList.add('show'), 1400);
-  } else {
-    const p = JSON.parse(stored);
-    document.getElementById('tgl-fonts').checked    = !!p.fonts;
-    document.getElementById('tgl-analytics').checked = !!p.analytics;
-  }
-  function saveCookies(fonts, analytics) {
-    localStorage.setItem('adom_ck', JSON.stringify({ fonts, analytics }));
-    banner.classList.remove('show');
-  }
-  document.getElementById('cookie-ok').addEventListener('click', () =>
-    saveCookies(document.getElementById('tgl-fonts').checked, document.getElementById('tgl-analytics').checked));
-  document.getElementById('cookie-no').addEventListener('click', () => saveCookies(false, false));
-
-  /* ── MODALS ── */
-  function openModal(id) {
-    const ov = document.getElementById(id);
-    if (!ov) return;
-    ov.classList.add('open');
-    if (!reduced && typeof gsap !== 'undefined') {
-      gsap.fromTo(ov.querySelector('.modal-box'), { opacity: 0, scale: .96 }, { opacity: 1, scale: 1, duration: .22, ease: 'power2.out' });
-    }
-    const firstFocusable = ov.querySelector('button,a,[tabindex]:not([tabindex="-1"])');
-    if (firstFocusable) firstFocusable.focus();
-  }
-  function closeModal(id) {
-    const ov = document.getElementById(id);
-    if (ov) ov.classList.remove('open');
-  }
-  function closeAll() { document.querySelectorAll('.modal-ov.open').forEach(m => m.classList.remove('open')); }
-
-  document.querySelectorAll('a[href^="#modal-"]').forEach(a => {
-    a.addEventListener('click', e => { e.preventDefault(); openModal(a.getAttribute('href').slice(1)); });
-  });
-  document.querySelectorAll('[data-close]').forEach(btn => {
-    btn.addEventListener('click', () => closeModal(btn.dataset.close));
-  });
-  document.querySelectorAll('.modal-ov').forEach(ov => {
-    ov.addEventListener('click', e => { if (e.target === ov) closeAll(); });
-  });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
-
-  /* ── FORM ── */
-  const form    = document.getElementById('cform');
-  const fsub    = document.getElementById('fsub');
-  const ferr    = document.getElementById('ferr');
-  const formOk  = document.getElementById('form-ok');
-  const loadedAt = Date.now();
-  let lastSent = parseInt(localStorage.getItem('adom_sent') || '0', 10);
-
-  function fieldErr(id, msg) {
-    const e = document.getElementById(id + '-e') || document.getElementById(id);
-    const i = document.getElementById(id.replace('-e',''));
-    if (e) { e.textContent = msg; e.classList.add('on'); }
-    if (i) i.style.borderColor = 'var(--error)';
-  }
-  function clearErr(fieldId) {
-    const el = document.getElementById(fieldId);
-    const er = document.getElementById(fieldId + '-e');
-    if (el) el.style.borderColor = '';
-    if (er) { er.textContent = ''; er.classList.remove('on'); }
-  }
-
-  // Live clear
-  ['prenom','telephone','email','ville','metier','site_existant'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('change', () => clearErr(id));
-    if (el) el.addEventListener('input',  () => clearErr(id));
-  });
-
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-
-    // Honeypots
-    if (document.getElementById('hp1').value || document.getElementById('hp2').value) return;
-
-    // Timer
-    if (Date.now() - loadedAt < 3000) {
-      ferr.textContent = 'Patientez quelques secondes avant d\'envoyer.';
-      ferr.classList.add('on'); return;
-    }
-
-    // Rate limit
-    if (Date.now() - lastSent < 60000) {
-      ferr.textContent = 'Vous venez d\'envoyer une demande. Patientez une minute.';
-      ferr.classList.add('on'); return;
-    }
-
-    // Sanitize & validate
-    const get = id => DOMPurify.sanitize((document.getElementById(id)?.value || '').trim());
-    const prenom       = get('prenom');
-    const telephone    = get('telephone');
-    const email        = get('email');
-    const ville        = get('ville');
-    const metier       = form.metier.value;
-    const site_existant = form.site_existant.value;
-
-    let ok = true;
-    if (!prenom || prenom.length < 2)                             { fieldErr('prenom', 'Prénom requis (min. 2 caractères)'); ok = false; }
-    if (!telephone || !/^[0-9\s+\-./()]{7,20}$/.test(telephone)) { fieldErr('tel', 'Numéro de téléphone invalide'); ok = false; }
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))     { fieldErr('email', 'Adresse email invalide'); ok = false; }
-    if (!ville || ville.length < 2)                               { fieldErr('ville', 'Ville requise'); ok = false; }
-    const metierOk = ['macon','plombier','electricien','peintre','charpentier','menuisier','carreleur','platrier','autre'];
-    if (!metierOk.includes(metier))                               { fieldErr('metier', 'Veuillez sélectionner votre métier'); ok = false; }
-    const siteOk = ['non','oui_refonte','oui_ok'];
-    if (!siteOk.includes(site_existant))                          { fieldErr('site', 'Veuillez répondre à cette question'); ok = false; }
-    if (!ok) return;
-
-    fsub.disabled = true;
-    fsub.textContent = 'Envoi en cours…';
-    ferr.classList.remove('on');
-
-    const payload = {
-      prenom, telephone, email, ville, metier, site_existant,
-      formule: DOMPurify.sanitize(form.formule?.value || ''),
-      message: DOMPurify.sanitize((document.getElementById('message')?.value || '').trim()).slice(0, 1000),
-      _t: loadedAt
-    };
-
-    try {
-      const res = await fetch('/.netlify/functions/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (res.ok) {
-        localStorage.setItem('adom_sent', String(Date.now()));
-        form.style.display = 'none';
-        formOk.classList.add('on');
-        formOk.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        const data = await res.json().catch(() => ({}));
-        ferr.textContent = data.error || 'Une erreur est survenue. Réessayez ou contactez-moi directement.';
-        ferr.classList.add('on');
-        fsub.disabled = false;
-        fsub.textContent = 'Envoyer ma demande — réponse sous 24h';
-      }
-    } catch {
-      ferr.textContent = 'Problème de connexion. Vérifiez votre réseau et réessayez.';
-      ferr.classList.add('on');
-      fsub.disabled = false;
-      fsub.textContent = 'Envoyer ma demande — réponse sous 24h';
-    }
-  });
-
-});
-</script>
+<script src="/assets/site.js" defer></script>
+<script src="/assets/demo.js" defer></script>
 </body>
 </html>

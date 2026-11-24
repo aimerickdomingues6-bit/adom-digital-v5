@@ -1,0 +1,29 @@
+/* Charte propre à l'artisan fictif « Maçonnerie Exemple ».
+   Chaque site client a sa propre charte : seules les variables changent,
+   les composants (estimateur, assistant, formulaires) restent ceux d'ADOM. */
+.demo-macon {
+  --calque: #F6F3EE;     /* fond pierre claire */
+  --cordeau: #8A3A1F;    /* brique : 8,0:1 sur blanc, 7,3:1 sur le fond */
+  --ardoise: #2A2421;    /* texte brun très sombre : 14,9:1 sur le fond */
+  --beton: #635A55;      /* texte secondaire : 5,9:1 sur le fond */
+  --trait: #D9D1C7;
+}
+.bandeau-demo { background: var(--surligneur); color: #1C262B; font-size: 14px; position: sticky; top: 0; z-index: 60; }
+.bandeau-demo .conteneur { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding-top: 8px; padding-bottom: 8px; }
+.bandeau-demo a { color: #1C262B; font-weight: 700; }
+.demo-macon .entete { top: 37px; }
+@media (max-width: 560px) { .demo-macon .entete { top: 58px; } }
+.demo-logo { font-family: var(--f-titre); font-weight: 800; font-size: 22px; color: var(--ardoise); text-decoration: none; line-height: 1.1; }
+.demo-logo span { color: var(--cordeau); }
+.demo-travaux { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 24px; }
+@media (min-width: 700px) { .demo-travaux { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .demo-travaux { grid-template-columns: repeat(3, 1fr); } }
+.demo-travail h3 { font-size: 20px; margin: 12px 0 4px; }
+.demo-travail p { margin: 0; }
+.photo-chantier { aspect-ratio: 4 / 3; background: repeating-linear-gradient(135deg, #EDE7DF 0 12px, #E4DDD3 12px 24px); display: grid; place-items: center; color: var(--beton); font-size: 14px; }
+.demo-garanties { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; }
+@media (min-width: 800px) { .demo-garanties { grid-template-columns: repeat(3, 1fr); } }
+.demo-garanties li { border-top: 3px solid var(--cordeau); padding-top: 12px; display: grid; gap: 4px; }
+.demo-garanties strong { font-family: var(--f-titre); font-stretch: 125%; font-size: 36px; line-height: 1; }
+.demo-macon .sombre { background: var(--ardoise); }
+.demo-macon .hero h1 { margin-bottom: 24px; }
